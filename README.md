@@ -13,6 +13,8 @@ Copyright (c) 2023, Jim Tufts
 
 
 #### Acknowledgements
+
+Adapted from work by Jiuyang Liang, Zhenli Xu, and Yue Zhao https://doi.org/10.1021/acs.jpca.2c01918
  
 Project based on the 
 [Computational Molecular Science Python Cookiecutter](https://github.com/molssi/cookiecutter-cms) version 1.1.
