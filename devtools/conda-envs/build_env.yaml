@@ -1,0 +1,29 @@
+name: build
+channels:
+
+  - conda-forge
+
+  - defaults
+dependencies:
+    # Base depends
+  - python
+  - pip
+  - swig
+  - openmm
+  - netcdf4
+
+    # Build
+  - cmake
+  - make
+  - gcc_linux-64 @GCC_VERSION@
+  - gxx_linux-64 @GCC_VERSION@
+
+    # Testing
+  - pytest
+  - pytest-cov
+  - codecov
+
+    # Pip-only installs
+  #- pip:
+  #  - codecov
+
