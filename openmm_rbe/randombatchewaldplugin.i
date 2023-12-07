@@ -1,4 +1,4 @@
-%module gridforceplugin
+%module randombatchewaldplugin
 
 %import(module="openmm") "swig/OpenMMSwigHeaders.i"
 %include "swig/typemaps.i"
@@ -28,7 +28,7 @@ namespace std {
 
 
 %{
-#include "GridForce.h"
+#include "RandomBatchEwald.h"
 #include "OpenMM.h"
 #include "OpenMMAmoeba.h"
 #include "OpenMMDrude.h"

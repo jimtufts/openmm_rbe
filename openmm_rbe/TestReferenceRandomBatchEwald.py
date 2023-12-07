@@ -6,7 +6,7 @@ import openmm as omm
 from openmm import unit
 from openmm.vec3 import Vec3
 import sys
-import gridforceplugin
+import rbe
 import numpy as np
 #import algdock
 
@@ -36,7 +36,7 @@ def getGridForce(FN, unit_conversion):
 
     data = grid_read(FN)
 
-    force = gridforceplugin.GridForce()
+    force = rbe.RandomBatchEwald()
     nx = int (data['counts'][0])
     ny = int (data['counts'][1])
     nz = int (data['counts'][2])

@@ -1,5 +1,5 @@
-#ifndef OPENMM_WINDOWSEXPORT_GRIDFORCE_H_
-#define OPENMM_WINDOWSEXPORT_GRIDFORCE_H_
+#ifndef OPENMM_WINDOWSEXPORT_RANDOMBATCHEWALD_H_
+#define OPENMM_WINDOWSEXPORT_RANDOMBATCHEWALD_H_
 
 /*
  * Shared libraries are messy in Visual Studio. We have to distinguish three
@@ -27,15 +27,15 @@
     #pragma warning(disable : 4996)
     // Keep MS VC++ quiet about lack of dll export of private members.
     #pragma warning(disable : 4251)
-    #if defined(GRIDFORCE_BUILDING_SHARED_LIBRARY)
-        #define OPENMM_EXPORT_GRIDFORCE __declspec(dllexport)
-    #elif defined(GRIDFORCE_BUILDING_STATIC_LIBRARY) || defined(GRIDFORCE_USE_STATIC_LIBRARIES)
-        #define OPENMM_EXPORT_GRIDFORCE
+    #if defined(RANDOMBATCHEWALD_BUILDING_SHARED_LIBRARY)
+        #define OPENMM_EXPORT_RANDOMBATCHEWALD __declspec(dllexport)
+    #elif defined(RANDOMBATCHEWALDBUILDING_STATIC_LIBRARY) || defined(RANDOMBATCHEWALD_USE_STATIC_LIBRARIES)
+        #define OPENMM_EXPORT_RANDOMBATCHEWALD
     #else
-        #define OPENMM_EXPORT_GRIDFORCE __declspec(dllimport) // i.e., a client of a shared library
+        #define OPENMM_EXPORT_RANDOMBATCHEWALD __declspec(dllimport) // i.e., a client of a shared library
     #endif
 #else
-    #define OPENMM_EXPORT_GRIDFORCE // Linux, Mac
+    #define OPENMM_EXPORT_RANDOMBATCHEWALD // Linux, Mac
 #endif
 
-#endif // OPENMM_WINDOWSEXPORT_GRIDFORCE_H_
+#endif // OPENMM_WINDOWSEXPORT_RANDOMBATCHEWALD_H_

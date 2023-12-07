@@ -1,5 +1,5 @@
 /* -------------------------------------------------------------------------- *
- *                              OpenMMGridForce                               *
+ *                               OpenMMGridForce                              *
  * -------------------------------------------------------------------------- *
  * This is part of the OpenMM molecular simulation toolkit originating from   *
  * Simbios, the NIH National Center for Physics-Based Simulation of           *
@@ -29,46 +29,62 @@
  * USE OR OTHER DEALINGS IN THE SOFTWARE.                                     *
  * -------------------------------------------------------------------------- */
 
-#include "internal/GridForceImpl.h"
-#include "GridForceKernels.h"
-#include "openmm/Platform.h"
-#include "openmm/internal/ContextImpl.h"
+#include "RandomBatchEwald.h"
+#include "internal/RandomBatchEwaldImpl.h"
 
-#include <cmath>
-#include <vector>
-#include <sstream>
+#include "openmm/Force.h"
+#include "openmm/OpenMMException.h"
+#include "openmm/internal/AssertionUtilities.h"
 
+
+#include <iostream>
 
 using namespace OpenMM;
 using namespace std;
 
-namespace GridForcePlugin {
+namespace RandomBatchEwaldPlugin {
 
-GridForceImpl::GridForceImpl(const GridForce &owner) : owner(owner) {
+RandomBatchEwald::RandomBatchEwald() {
+    //
 }
 
-GridForceImpl::~GridForceImpl() {
+void RandomBatchEwald::addGridCounts(int nx, int ny, int nz) {
+    m_counts.push_back(nx);
+    m_counts.push_back(ny);
+    m_counts.push_back(nz);
 }
 
-void GridForceImpl::initialize(ContextImpl &context) {
-    kernel = context.getPlatform().createKernel(CalcGridForceKernel::Name(), context);
-    kernel.getAs<CalcGridForceKernel>().initialize(context.getSystem(), owner);
+void RandomBatchEwald::addGridSpacing(double dx, double dy, double dz) {
+    // the length unit is 'nm'
+    m_spacing.push_back(dx);
+    m_spacing.push_back(dy);
+    m_spacing.push_back(dz);
 }
 
-double GridForceImpl::calcForcesAndEnergy(ContextImpl &context, bool includeForces, bool includeEnergy, int groups) {
-    if ((groups & (1 << owner.getForceGroup())) != 0)
-        return kernel.getAs<CalcGridForceKernel>().execute(context, includeForces, includeEnergy);
-    return 0.0;
+void RandomBatchEwald::addGridValue(double val) {
+    m_vals.push_back(val);
 }
 
-std::vector<std::string> GridForceImpl::getKernelNames() {
-    std::vector<std::string> names;
-    names.push_back(CalcGridForceKernel::Name());
-    return names;
+void RandomBatchEwald::addScalingFactor(double val) {
+    m_scaling_factors.push_back(val);
 }
 
-void GridForceImpl::updateParametersInContext(ContextImpl &context) {
-    kernel.getAs<CalcGridForceKernel>().copyParametersToContext(context, owner);
+void RandomBatchEwald::getGridParameters(std::vector<int> &g_counts,
+                                  std::vector<double> &g_spacing,
+                                  std::vector<double> &g_vals,
+                                  std::vector<double> &g_scaling_factors) const {
+    g_counts = m_counts;
+    g_spacing = m_spacing;
+    g_vals = m_vals;
+    g_scaling_factors = m_scaling_factors;
 }
 
-}  // namespace GridForcePlugin
+ForceImpl *RandomBatchEwald::createImpl() const {
+    return new RandomBatchEwaldImpl(*this);
+}
+
+void RandomBatchEwald::updateParametersInContext(Context &context) {
+    dynamic_cast<RandomBatchEwaldImpl &>(getImplInContext(context)).updateParametersInContext(getContextImpl(context));
+}
+
+}  // namespace RandomBatchEwald

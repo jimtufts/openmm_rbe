@@ -1,12 +1,15 @@
+#ifndef OPENMM_RANDOMBATCHEWALD_IMPL_H_
+#define OPENMM_RANDOMBATCHEWALD_IMPL_H_
+
 /* -------------------------------------------------------------------------- *
- *                               OpenMMGridForce                              *
+ *                                OpenMMGridForce                             *
  * -------------------------------------------------------------------------- *
  * This is part of the OpenMM molecular simulation toolkit originating from   *
  * Simbios, the NIH National Center for Physics-Based Simulation of           *
  * Biological Structures at Stanford, funded under the NIH Roadmap for        *
  * Medical Research, grant U54 GM072970. See https://simtk.org.               *
  *                                                                            *
- * Portions copyright (c) 2014 Stanford University and the Authors.           *
+ * Portions copyright (c) 2008 Stanford University and the Authors.           *
  * Authors:                                                                   *
  * Contributors:                                                              *
  *                                                                            *
@@ -29,62 +32,49 @@
  * USE OR OTHER DEALINGS IN THE SOFTWARE.                                     *
  * -------------------------------------------------------------------------- */
 
-#include "GridForce.h"
-#include "internal/GridForceImpl.h"
-
-#include "openmm/Force.h"
-#include "openmm/OpenMMException.h"
-#include "openmm/internal/AssertionUtilities.h"
 
 
-#include <iostream>
+#include "RandomBatchEwald.h"
+#include "openmm/Kernel.h"
+#include "openmm/internal/ForceImpl.h"
+#include <string>
+#include <utility>
+#include <vector>
 
-using namespace OpenMM;
-using namespace std;
 
-namespace GridForcePlugin {
+namespace RandomBatchEwaldPlugin {
 
-GridForce::GridForce() {
-    //
-}
+/**
+ * This is the internal implementation of AlGDockGridForce.
+ */
 
-void GridForce::addGridCounts(int nx, int ny, int nz) {
-    m_counts.push_back(nx);
-    m_counts.push_back(ny);
-    m_counts.push_back(nz);
-}
+class OPENMM_EXPORT_RANDOMBATCHEWALD RandomBatchEwaldImpl : public OpenMM::ForceImpl {
+   public:
+    RandomBatchEwaldImpl(const GridForce &owner);
+    ~RandomBatchEwaldImpl();
+    void initialize(OpenMM::ContextImpl &context);
+    const RandomBatchEwald &getOwner() const {
+        return owner;
+    }
+    void updateContextState(OpenMM::ContextImpl &context, bool& forcesInvalid) {
+        // This force field doesn't update the state directly.
+    }
+    double calcForcesAndEnergy(OpenMM::ContextImpl &context, 
+                                bool includeForces, 
+                                bool includeEnergy, 
+                                int groups);
+    std::map<std::string, double> getDefaultParameters() {
+        return std::map<std::string, double>();  // This force field doesn't define any parameters.
+    }
+    std::vector<std::string> getKernelNames();
 
-void GridForce::addGridSpacing(double dx, double dy, double dz) {
-    // the length unit is 'nm'
-    m_spacing.push_back(dx);
-    m_spacing.push_back(dy);
-    m_spacing.push_back(dz);
-}
+    void updateParametersInContext(OpenMM::ContextImpl &context);
 
-void GridForce::addGridValue(double val) {
-    m_vals.push_back(val);
-}
+   private:
+    const RandomBatchEwald &owner;
+    OpenMM::Kernel kernel;
+};
 
-void GridForce::addScalingFactor(double val) {
-    m_scaling_factors.push_back(val);
-}
+}  // namespace RandomBatchEwaldPlugin
 
-void GridForce::getGridParameters(std::vector<int> &g_counts,
-                                  std::vector<double> &g_spacing,
-                                  std::vector<double> &g_vals,
-                                  std::vector<double> &g_scaling_factors) const {
-    g_counts = m_counts;
-    g_spacing = m_spacing;
-    g_vals = m_vals;
-    g_scaling_factors = m_scaling_factors;
-}
-
-ForceImpl *GridForce::createImpl() const {
-    return new GridForceImpl(*this);
-}
-
-void GridForce::updateParametersInContext(Context &context) {
-    dynamic_cast<GridForceImpl &>(getImplInContext(context)).updateParametersInContext(getContextImpl(context));
-}
-
-}  // namespace GridForcePlugin
+#endif /*OPENMM_RandomBatchEwald_IMPL_H_*/

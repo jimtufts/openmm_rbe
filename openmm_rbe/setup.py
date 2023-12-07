@@ -17,7 +17,7 @@ if platform.system() == 'Darwin':
     extra_link_args += ['-stdlib=libc++', '-mmacosx-version-min=10.7', '-Wl', '-rpath', openmm_dir+'/lib']
 
 extension = Extension(name='_gridforceplugin',
-                      sources=['GridForcePluginWrapper.cpp'],
+                      sources=['RandomBatchEwaldPluginWrapper.cpp'],
                       libraries=['OpenMM', 'OpenMMGridForce'],
                       include_dirs=[os.path.join(openmm_dir, 'include'), gridforceplugin_header_dir],
                       library_dirs=[os.path.join(openmm_dir, 'lib'), gridforceplugin_library_dir],
