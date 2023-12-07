@@ -5,7 +5,7 @@ OpenMM Random Batch Ewald Plugin
 [![codecov](https://codecov.io/gh/REPLACE_WITH_OWNER_ACCOUNT/OpenMM Random Batch Ewald Plugin/branch/main/graph/badge.svg)](https://codecov.io/gh/REPLACE_WITH_OWNER_ACCOUNT/OpenMM Random Batch Ewald Plugin/branch/main)
 
 
-Apply RBE method for electrostatics in OpenMM.
+Apply RBE method for electrostatics in OpenMM.  This is a WIP and nonfunctional. This README will be updated to mark the first functional release.
 
 ### Copyright
 
