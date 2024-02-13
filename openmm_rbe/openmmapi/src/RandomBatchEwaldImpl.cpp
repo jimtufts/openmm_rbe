@@ -1,8 +1,5 @@
-#ifndef OPENMM_RANDOMBATCHEWALD_KERNELS_H_
-#define OPENMM_RANDOMBATCHEWALD_KERNELS_H_
-
 /* -------------------------------------------------------------------------- *
- *                               OpenMMRandomBatchEwald                              *
+ *                              OpenMMRandomBatchEwald                               *
  * -------------------------------------------------------------------------- *
  * This is part of the OpenMM molecular simulation toolkit originating from   *
  * Simbios, the NIH National Center for Physics-Based Simulation of           *
@@ -32,53 +29,46 @@
  * USE OR OTHER DEALINGS IN THE SOFTWARE.                                     *
  * -------------------------------------------------------------------------- */
 
-#include <string>
-
-#include "RandomBatchEwald.h"
-#include "openmm/KernelImpl.h"
+#include "internal/RandomBatchEwaldImpl.h"
+#include "RandomBatchEwaldKernels.h"
 #include "openmm/Platform.h"
-#include "openmm/System.h"
+#include "openmm/internal/ContextImpl.h"
 
-namespace RandomBatchEwald {
+#include <cmath>
+#include <vector>
+#include <sstream>
 
 
-// Add the other ForceKernels
-class CalcRandomBatchEwaldKernel : public OpenMM::KernelImpl {
-   public:
-    static std::string Name() {
-        return "CalcRandomBatchEwald";
-    }
+using namespace OpenMM;
+using namespace std;
 
-    CalcRandomBatchEwaldKernel(std::string name, const OpenMM::Platform &platform)
-        : OpenMM::KernelImpl(name, platform) {
-    }
-    /**
-     * Initialize the kernel.
-     * 
-     * @param system     the System this kernel will be applied to
-     * @param force      the GridForce this kernel will be used for
-     */
-    virtual void initialize(const OpenMM::System &system, 
-                            const RandomBatchEwald &force) = 0;
-    /**
-     * Execute the kernel to calculate the forces and/or energy.
-     *
-     * @param context        the context in which to execute this kernel
-     * @param includeForces  true if forces should be calculated
-     * @param includeEnergy  true if the energy should be calculated
-     * @return the potential energy due to the force
-     */
-    virtual double execute(OpenMM::ContextImpl &context, bool includeForces, bool includeEnergy) = 0;
-    /**
-     * Copy changed parameters over to a context.
-     *
-     * @param context    the context to copy parameters to
-     * @param force      the AlGDockForce to copy the parameters from
-     */
-    virtual void copyParametersToContext(OpenMM::ContextImpl &context, 
-                                        const RandomBatchEwald &force) = 0;
-};
+namespace RandomBatchEwaldPlugin {
+
+RandomBatchEwaldImpl::RandomBatchEwaldImpl(const RandomBatchEwald &owner) : owner(owner) {
+}
+
+RandomBatchEwaldImpl::~RandomBatchEwaldImpl() {
+}
+
+void RandomBatchEwaldImpl::initialize(ContextImpl &context) {
+    kernel = context.getPlatform().createKernel(CalcRandomBatchEwaldKernel::Name(), context);
+    kernel.getAs<CalcRandonBatchEwaldKernel>().initialize(context.getSystem(), owner);
+}
+
+double RandomBatchEwaldImpl::calcForcesAndEnergy(ContextImpl &context, bool includeForces, bool includeEnergy, int groups) {
+    if ((groups & (1 << owner.getForceGroup())) != 0)
+        return kernel.getAs<CalcRandomBatchEwaldKernel>().execute(context, includeForces, includeEnergy);
+    return 0.0;
+}
+
+std::vector<std::string> RandomBatchEwaldImpl::getKernelNames() {
+    std::vector<std::string> names;
+    names.push_back(CalcRandomBatchKernel::Name());
+    return names;
+}
+
+void RandomBatchEwaldImpl::updateParametersInContext(ContextImpl &context) {
+    kernel.getAs<CalcRandomBatchKernel>().copyParametersToContext(context, owner);
+}
 
 }  // namespace RandomBatchEwaldPlugin
-
-#endif /* OPENMM_RANDOMBATCHEWALD_KERNELS_H_*/

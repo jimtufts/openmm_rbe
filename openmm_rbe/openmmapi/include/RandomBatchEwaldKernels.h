@@ -1,15 +1,15 @@
-#ifndef OPENMM_GRIDFORCE_H_
-#define OPENMM_GRIDFORCE_H_
+#ifndef OPENMM_RANDOMBATCHEWALD_KERNELS_H_
+#define OPENMM_RANDOMBATCHEWALD_KERNELS_H_
 
 /* -------------------------------------------------------------------------- *
- *                              OpenMMGridForce                               *
+ *                               OpenMMRandomBatchEwald                              *
  * -------------------------------------------------------------------------- *
  * This is part of the OpenMM molecular simulation toolkit originating from   *
  * Simbios, the NIH National Center for Physics-Based Simulation of           *
  * Biological Structures at Stanford, funded under the NIH Roadmap for        *
  * Medical Research, grant U54 GM072970. See https://simtk.org.               *
  *                                                                            *
- * Portions copyright (c) 2008-2012 Stanford University and the Authors.      *
+ * Portions copyright (c) 2014 Stanford University and the Authors.           *
  * Authors:                                                                   *
  * Contributors:                                                              *
  *                                                                            *
@@ -33,60 +33,52 @@
  * -------------------------------------------------------------------------- */
 
 #include <string>
-#include <vector>
 
-#include "internal/windowsExportGridForce.h"
-#include "openmm/Context.h"
-#include "openmm/Force.h"
-#include "openmm/Vec3.h"
+#include "RandomBatchEwald.h"
+#include "openmm/KernelImpl.h"
+#include "openmm/Platform.h"
+#include "openmm/System.h"
 
-using namespace OpenMM;
+namespace RandomBatchEwald {
 
-namespace GridForcePlugin {
 
-/**
- * This class implements the AlGDock Nonbond interaction.
- */
-
-class OPENMM_EXPORT_GRIDFORCE GridForce : public OpenMM::Force {
+// Add the other ForceKernels
+class CalcRandomBatchEwaldKernel : public OpenMM::KernelImpl {
    public:
-    /**
-     * Create a GridForce.
-     * @param spacing       the grid space
-     * @param vals          the value at each grid
-     */
-    GridForce();
+    static std::string Name() {
+        return "CalcRandomBatchEwald";
+    }
 
+    CalcRandomBatchEwaldKernel(std::string name, const OpenMM::Platform &platform)
+        : OpenMM::KernelImpl(name, platform) {
+    }
     /**
-     * Get the force field parameters for a Nonbond Energy term
+     * Initialize the kernel.
      * 
+     * @param system     the System this kernel will be applied to
+     * @param force      the RandomBatchEwald this kernel will be used for
      */
-    void addGridCounts(int nx, int ny, int nz);
-    void addGridSpacing(double dx, double dy, double dz);  // length unit is 'nm'
-
-    void addGridValue(double val);
-    void addScalingFactor(double val);
-
-    void getGridParameters(std::vector<int> &g_counts,
-                           std::vector<double> &g_spacing,
-                           std::vector<double> &g_vals,
-                           std::vector<double> &g_scaling_factors) const;
-
+    virtual void initialize(const OpenMM::System &system, 
+                            const RandomBatchEwald &force) = 0;
     /**
+     * Execute the kernel to calculate the forces and/or energy.
      *
+     * @param context        the context in which to execute this kernel
+     * @param includeForces  true if forces should be calculated
+     * @param includeEnergy  true if the energy should be calculated
+     * @return the potential energy due to the force
      */
-    void updateParametersInContext(Context &context);
-
-   protected:
-    ForceImpl *createImpl() const;
-
-   private:
-    std::vector<int> m_counts;
-    std::vector<double> m_spacing;  // the length unit is 'nm'
-    std::vector<double> m_vals;
-    std::vector<double> m_scaling_factors;
+    virtual double execute(OpenMM::ContextImpl &context, bool includeForces, bool includeEnergy) = 0;
+    /**
+     * Copy changed parameters over to a context.
+     *
+     * @param context    the context to copy parameters to
+     * @param force      the AlGDockForce to copy the parameters from
+     */
+    virtual void copyParametersToContext(OpenMM::ContextImpl &context, 
+                                        const RandomBatchEwald &force) = 0;
 };
 
-}  // namespace GridForcePlugin
+}  // namespace RandomBatchEwaldPlugin
 
-#endif /*OPENMM_GRIDFORCE_H_*/
+#endif /* OPENMM_RANDOMBATCHEWALD_KERNELS_H_*/

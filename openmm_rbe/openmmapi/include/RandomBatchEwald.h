@@ -1,12 +1,15 @@
+#ifndef OPENMM_RANDOMBATCHEWALD_H_
+#define OPENMM_RANDOMBATCHEWALD_H_
+
 /* -------------------------------------------------------------------------- *
- *                              OpenMMGridForce                               *
+ *                              OpenMMRandomBatchEwald                               *
  * -------------------------------------------------------------------------- *
  * This is part of the OpenMM molecular simulation toolkit originating from   *
  * Simbios, the NIH National Center for Physics-Based Simulation of           *
  * Biological Structures at Stanford, funded under the NIH Roadmap for        *
  * Medical Research, grant U54 GM072970. See https://simtk.org.               *
  *                                                                            *
- * Portions copyright (c) 2014 Stanford University and the Authors.           *
+ * Portions copyright (c) 2008-2012 Stanford University and the Authors.      *
  * Authors:                                                                   *
  * Contributors:                                                              *
  *                                                                            *
@@ -29,46 +32,61 @@
  * USE OR OTHER DEALINGS IN THE SOFTWARE.                                     *
  * -------------------------------------------------------------------------- */
 
-#include "internal/RandomBatchEwaldImpl.h"
-#include "RandomBatchEwaldKernels.h"
-#include "openmm/Platform.h"
-#include "openmm/internal/ContextImpl.h"
-
-#include <cmath>
+#include <string>
 #include <vector>
-#include <sstream>
 
+#include "internal/windowsExportRandomBatchEwald.h"
+#include "openmm/Context.h"
+#include "openmm/Force.h"
+#include "openmm/Vec3.h"
 
 using namespace OpenMM;
-using namespace std;
 
 namespace RandomBatchEwaldPlugin {
 
-RandomBatchEwaldImpl::RandomBatchEwaldImpl(const RandomBatchEwald &owner) : owner(owner) {
-}
+/**
+ * This class implements the AlGDock Nonbond interaction.
+ */
 
-RandomBatchEwaldImpl::~RandomBatchEwaldImpl() {
-}
+class OPENMM_EXPORT_RANDOMBATCHEWALD RandomBatchEwald : public OpenMM::Force {
+   public:
+    /**
+     * Create a RandomBatchEwald.
+     * @param spacing       the grid space
+     * @param vals          the value at each grid
+     */
+    RandomBatchEwald();
 
-void RandomBatchEwaldImpl::initialize(ContextImpl &context) {
-    kernel = context.getPlatform().createKernel(CalcRandomBatchEwaldKernel::Name(), context);
-    kernel.getAs<CalcRandonBatchEwaldKernel>().initialize(context.getSystem(), owner);
-}
+    /**
+     * Get the force field parameters for a Nonbond Energy term
+     * 
+     */
+    void addGridCounts(int nx, int ny, int nz);
+    void addGridSpacing(double dx, double dy, double dz);  // length unit is 'nm'
 
-double GridForceImpl::calcForcesAndEnergy(ContextImpl &context, bool includeForces, bool includeEnergy, int groups) {
-    if ((groups & (1 << owner.getForceGroup())) != 0)
-        return kernel.getAs<CalcRandomBatchEwaldKernel>().execute(context, includeForces, includeEnergy);
-    return 0.0;
-}
+    void addGridValue(double val);
+    void addScalingFactor(double val);
 
-std::vector<std::string> GridForceImpl::getKernelNames() {
-    std::vector<std::string> names;
-    names.push_back(CalcRandomBatchKernel::Name());
-    return names;
-}
+    void getGridParameters(std::vector<int> &g_counts,
+                           std::vector<double> &g_spacing,
+                           std::vector<double> &g_vals,
+                           std::vector<double> &g_scaling_factors) const;
 
-void GridForceImpl::updateParametersInContext(ContextImpl &context) {
-    kernel.getAs<CalcRandomBatchKernel>().copyParametersToContext(context, owner);
-}
+    /**
+     *
+     */
+    void updateParametersInContext(Context &context);
 
-}  // namespace GridForcePlugin
+   protected:
+    ForceImpl *createImpl() const;
+
+   private:
+    std::vector<int> m_counts;
+    std::vector<double> m_spacing;  // the length unit is 'nm'
+    std::vector<double> m_vals;
+    std::vector<double> m_scaling_factors;
+};
+
+}  // namespace RandomBatchEwaldPlugin
+
+#endif /*OPENMM_RANDOMBATCHEWALD_H_*/

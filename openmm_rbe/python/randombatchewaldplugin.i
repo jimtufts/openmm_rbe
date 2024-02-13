@@ -28,7 +28,7 @@ namespace std {
 
 
 %{
-#include "RandomBatchEwald.h"
+#include "openmmapi/include/RandomBatchEwald.h"
 #include "OpenMM.h"
 #include "OpenMMAmoeba.h"
 #include "OpenMMDrude.h"
@@ -42,11 +42,11 @@ namespace std {
 
 using namespace OpenMM;
 
-namespace GridForcePlugin {
+namespace RandomBatchEwaldPlugin {
 
-class GridForce : public Force {
+class RandomBatchEwald : public Force {
 public:
-    GridForce();
+    RandomBatchEwald();
 
     void addGridCounts (int nx, int ny, int nz);
     void addGridSpacing (double dx, double dy, double dz);

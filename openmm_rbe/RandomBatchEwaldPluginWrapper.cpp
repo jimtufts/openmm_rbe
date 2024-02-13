@@ -3006,127 +3006,151 @@ SWIG_Python_NonDynamicSetAttr(PyObject *obj, PyObject *name, PyObject *value) {
 
 /* -------- TYPES TABLE (BEGIN) -------- */
 
-#define SWIGTYPE_p_GridForcePlugin__GridForce swig_types[0]
+#define SWIGTYPE_p_OpenMM__ATMForce swig_types[0]
 #define SWIGTYPE_p_OpenMM__AmoebaGeneralizedKirkwoodForce swig_types[1]
 #define SWIGTYPE_p_OpenMM__AmoebaMultipoleForce swig_types[2]
 #define SWIGTYPE_p_OpenMM__AmoebaTorsionTorsionForce swig_types[3]
 #define SWIGTYPE_p_OpenMM__AmoebaVdwForce swig_types[4]
 #define SWIGTYPE_p_OpenMM__AmoebaWcaDispersionForce swig_types[5]
 #define SWIGTYPE_p_OpenMM__AndersenThermostat swig_types[6]
-#define SWIGTYPE_p_OpenMM__CMAPTorsionForce swig_types[7]
-#define SWIGTYPE_p_OpenMM__CMMotionRemover swig_types[8]
-#define SWIGTYPE_p_OpenMM__Context swig_types[9]
-#define SWIGTYPE_p_OpenMM__CustomAngleForce swig_types[10]
-#define SWIGTYPE_p_OpenMM__CustomBondForce swig_types[11]
-#define SWIGTYPE_p_OpenMM__CustomCVForce swig_types[12]
-#define SWIGTYPE_p_OpenMM__CustomCentroidBondForce swig_types[13]
-#define SWIGTYPE_p_OpenMM__CustomCompoundBondForce swig_types[14]
-#define SWIGTYPE_p_OpenMM__CustomExternalForce swig_types[15]
-#define SWIGTYPE_p_OpenMM__CustomGBForce swig_types[16]
-#define SWIGTYPE_p_OpenMM__CustomHbondForce swig_types[17]
-#define SWIGTYPE_p_OpenMM__CustomManyParticleForce swig_types[18]
-#define SWIGTYPE_p_OpenMM__CustomNonbondedForce swig_types[19]
-#define SWIGTYPE_p_OpenMM__CustomTorsionForce swig_types[20]
-#define SWIGTYPE_p_OpenMM__DrudeForce swig_types[21]
-#define SWIGTYPE_p_OpenMM__Force swig_types[22]
-#define SWIGTYPE_p_OpenMM__GBSAOBCForce swig_types[23]
-#define SWIGTYPE_p_OpenMM__GayBerneForce swig_types[24]
-#define SWIGTYPE_p_OpenMM__HarmonicAngleForce swig_types[25]
-#define SWIGTYPE_p_OpenMM__HarmonicBondForce swig_types[26]
-#define SWIGTYPE_p_OpenMM__HippoNonbondedForce swig_types[27]
-#define SWIGTYPE_p_OpenMM__MonteCarloAnisotropicBarostat swig_types[28]
-#define SWIGTYPE_p_OpenMM__MonteCarloBarostat swig_types[29]
-#define SWIGTYPE_p_OpenMM__MonteCarloFlexibleBarostat swig_types[30]
-#define SWIGTYPE_p_OpenMM__MonteCarloMembraneBarostat swig_types[31]
-#define SWIGTYPE_p_OpenMM__NonbondedForce swig_types[32]
-#define SWIGTYPE_p_OpenMM__PeriodicTorsionForce swig_types[33]
-#define SWIGTYPE_p_OpenMM__RBTorsionForce swig_types[34]
-#define SWIGTYPE_p_OpenMM__RMSDForce swig_types[35]
-#define SWIGTYPE_p_OpenMM__RPMDMonteCarloBarostat swig_types[36]
-#define SWIGTYPE_p_allocator_type swig_types[37]
-#define SWIGTYPE_p_bool swig_types[38]
-#define SWIGTYPE_p_char swig_types[39]
-#define SWIGTYPE_p_char_type swig_types[40]
-#define SWIGTYPE_p_difference_type swig_types[41]
-#define SWIGTYPE_p_double swig_types[42]
-#define SWIGTYPE_p_f_enum_std__ios_base__event_r_std__ios_base_int__void swig_types[43]
-#define SWIGTYPE_p_f_r_std__basic_ios__char_std__char_traits__char______r_std__basic_iosT_char_std__char_traitsT_char_t_t swig_types[44]
-#define SWIGTYPE_p_f_r_std__basic_ios__char_std__char_traits__char______r_std__basic_iostreamT_char_std__char_traitsT_char_t_t swig_types[45]
-#define SWIGTYPE_p_f_r_std__basic_ios__char_std__char_traits__char______r_std__basic_istreamT_char_std__char_traitsT_char_t_t swig_types[46]
-#define SWIGTYPE_p_f_r_std__basic_ios__char_std__char_traits__char______r_std__basic_ostreamT_char_std__char_traitsT_char_t_t swig_types[47]
-#define SWIGTYPE_p_f_r_std__basic_istream__char_std__char_traits__char______r_std__basic_iostreamT_char_std__char_traitsT_char_t_t swig_types[48]
-#define SWIGTYPE_p_f_r_std__basic_istream__char_std__char_traits__char______r_std__basic_istreamT_char_std__char_traitsT_char_t_t swig_types[49]
-#define SWIGTYPE_p_f_r_std__basic_ostream__char_std__char_traits__char______r_std__basic_iostreamT_char_std__char_traitsT_char_t_t swig_types[50]
-#define SWIGTYPE_p_f_r_std__basic_ostream__char_std__char_traits__char______r_std__basic_ostreamT_char_std__char_traitsT_char_t_t swig_types[51]
-#define SWIGTYPE_p_f_r_std__ios_base__r_std__basic_iosT_char_std__char_traitsT_char_t_t swig_types[52]
-#define SWIGTYPE_p_f_r_std__ios_base__r_std__basic_iostreamT_char_std__char_traitsT_char_t_t swig_types[53]
-#define SWIGTYPE_p_f_r_std__ios_base__r_std__basic_istreamT_char_std__char_traitsT_char_t_t swig_types[54]
-#define SWIGTYPE_p_f_r_std__ios_base__r_std__basic_ostreamT_char_std__char_traitsT_char_t_t swig_types[55]
-#define SWIGTYPE_p_f_r_std__ios_base__r_std__ios_base swig_types[56]
-#define SWIGTYPE_p_first_type swig_types[57]
-#define SWIGTYPE_p_float swig_types[58]
-#define SWIGTYPE_p_fmtflags swig_types[59]
-#define SWIGTYPE_p_int swig_types[60]
-#define SWIGTYPE_p_int_type swig_types[61]
-#define SWIGTYPE_p_iostate swig_types[62]
-#define SWIGTYPE_p_key_type swig_types[63]
-#define SWIGTYPE_p_long swig_types[64]
-#define SWIGTYPE_p_long_double swig_types[65]
-#define SWIGTYPE_p_long_long swig_types[66]
-#define SWIGTYPE_p_mapped_type swig_types[67]
-#define SWIGTYPE_p_off_type swig_types[68]
-#define SWIGTYPE_p_openmode swig_types[69]
-#define SWIGTYPE_p_p_PyObject swig_types[70]
-#define SWIGTYPE_p_p_void swig_types[71]
-#define SWIGTYPE_p_pos_type swig_types[72]
-#define SWIGTYPE_p_second_type swig_types[73]
-#define SWIGTYPE_p_seekdir swig_types[74]
-#define SWIGTYPE_p_short swig_types[75]
-#define SWIGTYPE_p_size_t swig_types[76]
-#define SWIGTYPE_p_size_type swig_types[77]
-#define SWIGTYPE_p_state_type swig_types[78]
-#define SWIGTYPE_p_std__allocatorT_double_t swig_types[79]
-#define SWIGTYPE_p_std__allocatorT_int_t swig_types[80]
-#define SWIGTYPE_p_std__allocatorT_std__pairT_int_const_int_t_t swig_types[81]
-#define SWIGTYPE_p_std__allocatorT_std__pairT_int_int_t_t swig_types[82]
-#define SWIGTYPE_p_std__allocatorT_std__pairT_std__string_const_double_t_t swig_types[83]
-#define SWIGTYPE_p_std__allocatorT_std__pairT_std__string_const_std__string_t_t swig_types[84]
-#define SWIGTYPE_p_std__allocatorT_std__string_t swig_types[85]
-#define SWIGTYPE_p_std__allocatorT_std__vectorT_int_std__allocatorT_int_t_t_t swig_types[86]
-#define SWIGTYPE_p_std__allocatorT_std__vectorT_std__vectorT_double_std__allocatorT_double_t_t_std__allocatorT_std__vectorT_double_std__allocatorT_double_t_t_t_t_t swig_types[87]
-#define SWIGTYPE_p_std__basic_iosT_char_std__char_traitsT_char_t_t swig_types[88]
-#define SWIGTYPE_p_std__basic_iostreamT_char_std__char_traitsT_char_t_t swig_types[89]
-#define SWIGTYPE_p_std__basic_istreamT_char_std__char_traitsT_char_t_t swig_types[90]
-#define SWIGTYPE_p_std__basic_ostreamT_char_std__char_traitsT_char_t_t swig_types[91]
-#define SWIGTYPE_p_std__basic_streambufT_char_std__char_traitsT_char_t_t swig_types[92]
-#define SWIGTYPE_p_std__basic_stringT_char_std__char_traitsT_char_t_std__allocatorT_char_t_t swig_types[93]
-#define SWIGTYPE_p_std__ios_base swig_types[94]
-#define SWIGTYPE_p_std__lessT_int_t swig_types[95]
-#define SWIGTYPE_p_std__lessT_std__string_t swig_types[96]
-#define SWIGTYPE_p_std__locale swig_types[97]
-#define SWIGTYPE_p_std__mapT_int_int_std__lessT_int_t_std__allocatorT_std__pairT_int_const_int_t_t_t swig_types[98]
-#define SWIGTYPE_p_std__mapT_std__string_double_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_double_t_t_t swig_types[99]
-#define SWIGTYPE_p_std__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t swig_types[100]
-#define SWIGTYPE_p_std__pairT_int_int_t swig_types[101]
-#define SWIGTYPE_p_std__setT_int_std__lessT_int_t_std__allocatorT_int_t_t swig_types[102]
-#define SWIGTYPE_p_std__vectorT_double_std__allocatorT_double_t_t swig_types[103]
-#define SWIGTYPE_p_std__vectorT_int_std__allocatorT_int_t_t swig_types[104]
-#define SWIGTYPE_p_std__vectorT_std__pairT_int_int_t_std__allocatorT_std__pairT_int_int_t_t_t swig_types[105]
-#define SWIGTYPE_p_std__vectorT_std__string_std__allocatorT_std__string_t_t swig_types[106]
-#define SWIGTYPE_p_std__vectorT_std__vectorT_double_std__allocatorT_double_t_t_std__allocatorT_std__vectorT_double_std__allocatorT_double_t_t_t_t swig_types[107]
-#define SWIGTYPE_p_std__vectorT_std__vectorT_int_std__allocatorT_int_t_t_std__allocatorT_std__vectorT_int_std__allocatorT_int_t_t_t_t swig_types[108]
-#define SWIGTYPE_p_std__vectorT_std__vectorT_std__vectorT_double_std__allocatorT_double_t_t_std__allocatorT_std__vectorT_double_std__allocatorT_double_t_t_t_t_std__allocatorT_std__vectorT_std__vectorT_double_std__allocatorT_double_t_t_std__allocatorT_std__vectorT_double_std__allocatorT_double_t_t_t_t_t_t swig_types[109]
-#define SWIGTYPE_p_streamoff swig_types[110]
-#define SWIGTYPE_p_streampos swig_types[111]
-#define SWIGTYPE_p_swig__SwigPyIterator swig_types[112]
-#define SWIGTYPE_p_traits_type swig_types[113]
-#define SWIGTYPE_p_unsigned_int swig_types[114]
-#define SWIGTYPE_p_unsigned_long swig_types[115]
-#define SWIGTYPE_p_unsigned_long_long swig_types[116]
-#define SWIGTYPE_p_unsigned_short swig_types[117]
-#define SWIGTYPE_p_value_type swig_types[118]
-static swig_type_info *swig_types[120];
-static swig_module_info swig_module = {swig_types, 119, 0, 0, 0, 0};
+#define SWIGTYPE_p_OpenMM__BrownianIntegrator swig_types[7]
+#define SWIGTYPE_p_OpenMM__CMAPTorsionForce swig_types[8]
+#define SWIGTYPE_p_OpenMM__CMMotionRemover swig_types[9]
+#define SWIGTYPE_p_OpenMM__CompoundIntegrator swig_types[10]
+#define SWIGTYPE_p_OpenMM__Context swig_types[11]
+#define SWIGTYPE_p_OpenMM__Continuous1DFunction swig_types[12]
+#define SWIGTYPE_p_OpenMM__Continuous2DFunction swig_types[13]
+#define SWIGTYPE_p_OpenMM__Continuous3DFunction swig_types[14]
+#define SWIGTYPE_p_OpenMM__CustomAngleForce swig_types[15]
+#define SWIGTYPE_p_OpenMM__CustomBondForce swig_types[16]
+#define SWIGTYPE_p_OpenMM__CustomCVForce swig_types[17]
+#define SWIGTYPE_p_OpenMM__CustomCentroidBondForce swig_types[18]
+#define SWIGTYPE_p_OpenMM__CustomCompoundBondForce swig_types[19]
+#define SWIGTYPE_p_OpenMM__CustomExternalForce swig_types[20]
+#define SWIGTYPE_p_OpenMM__CustomGBForce swig_types[21]
+#define SWIGTYPE_p_OpenMM__CustomHbondForce swig_types[22]
+#define SWIGTYPE_p_OpenMM__CustomIntegrator swig_types[23]
+#define SWIGTYPE_p_OpenMM__CustomManyParticleForce swig_types[24]
+#define SWIGTYPE_p_OpenMM__CustomNonbondedForce swig_types[25]
+#define SWIGTYPE_p_OpenMM__CustomTorsionForce swig_types[26]
+#define SWIGTYPE_p_OpenMM__Discrete1DFunction swig_types[27]
+#define SWIGTYPE_p_OpenMM__Discrete2DFunction swig_types[28]
+#define SWIGTYPE_p_OpenMM__Discrete3DFunction swig_types[29]
+#define SWIGTYPE_p_OpenMM__DrudeForce swig_types[30]
+#define SWIGTYPE_p_OpenMM__DrudeLangevinIntegrator swig_types[31]
+#define SWIGTYPE_p_OpenMM__DrudeNoseHooverIntegrator swig_types[32]
+#define SWIGTYPE_p_OpenMM__DrudeSCFIntegrator swig_types[33]
+#define SWIGTYPE_p_OpenMM__Force swig_types[34]
+#define SWIGTYPE_p_OpenMM__GBSAOBCForce swig_types[35]
+#define SWIGTYPE_p_OpenMM__GayBerneForce swig_types[36]
+#define SWIGTYPE_p_OpenMM__HarmonicAngleForce swig_types[37]
+#define SWIGTYPE_p_OpenMM__HarmonicBondForce swig_types[38]
+#define SWIGTYPE_p_OpenMM__HippoNonbondedForce swig_types[39]
+#define SWIGTYPE_p_OpenMM__LangevinIntegrator swig_types[40]
+#define SWIGTYPE_p_OpenMM__LangevinMiddleIntegrator swig_types[41]
+#define SWIGTYPE_p_OpenMM__LocalCoordinatesSite swig_types[42]
+#define SWIGTYPE_p_OpenMM__MonteCarloAnisotropicBarostat swig_types[43]
+#define SWIGTYPE_p_OpenMM__MonteCarloBarostat swig_types[44]
+#define SWIGTYPE_p_OpenMM__MonteCarloFlexibleBarostat swig_types[45]
+#define SWIGTYPE_p_OpenMM__MonteCarloMembraneBarostat swig_types[46]
+#define SWIGTYPE_p_OpenMM__NonbondedForce swig_types[47]
+#define SWIGTYPE_p_OpenMM__NoseHooverIntegrator swig_types[48]
+#define SWIGTYPE_p_OpenMM__OutOfPlaneSite swig_types[49]
+#define SWIGTYPE_p_OpenMM__PeriodicTorsionForce swig_types[50]
+#define SWIGTYPE_p_OpenMM__RBTorsionForce swig_types[51]
+#define SWIGTYPE_p_OpenMM__RMSDForce swig_types[52]
+#define SWIGTYPE_p_OpenMM__RPMDIntegrator swig_types[53]
+#define SWIGTYPE_p_OpenMM__RPMDMonteCarloBarostat swig_types[54]
+#define SWIGTYPE_p_OpenMM__ThreeParticleAverageSite swig_types[55]
+#define SWIGTYPE_p_OpenMM__TwoParticleAverageSite swig_types[56]
+#define SWIGTYPE_p_OpenMM__VariableLangevinIntegrator swig_types[57]
+#define SWIGTYPE_p_OpenMM__VariableVerletIntegrator swig_types[58]
+#define SWIGTYPE_p_OpenMM__VerletIntegrator swig_types[59]
+#define SWIGTYPE_p_RandomBatchEwaldPlugin__RandomBatchEwald swig_types[60]
+#define SWIGTYPE_p_allocator_type swig_types[61]
+#define SWIGTYPE_p_bool swig_types[62]
+#define SWIGTYPE_p_char swig_types[63]
+#define SWIGTYPE_p_char_type swig_types[64]
+#define SWIGTYPE_p_difference_type swig_types[65]
+#define SWIGTYPE_p_double swig_types[66]
+#define SWIGTYPE_p_f_enum_std__ios_base__event_r_std__ios_base_int__void swig_types[67]
+#define SWIGTYPE_p_f_r_std__basic_ios__char_std__char_traits__char______r_std__basic_iosT_char_std__char_traitsT_char_t_t swig_types[68]
+#define SWIGTYPE_p_f_r_std__basic_ios__char_std__char_traits__char______r_std__basic_iostreamT_char_std__char_traitsT_char_t_t swig_types[69]
+#define SWIGTYPE_p_f_r_std__basic_ios__char_std__char_traits__char______r_std__basic_istreamT_char_std__char_traitsT_char_t_t swig_types[70]
+#define SWIGTYPE_p_f_r_std__basic_ios__char_std__char_traits__char______r_std__basic_ostreamT_char_std__char_traitsT_char_t_t swig_types[71]
+#define SWIGTYPE_p_f_r_std__basic_istream__char_std__char_traits__char______r_std__basic_iostreamT_char_std__char_traitsT_char_t_t swig_types[72]
+#define SWIGTYPE_p_f_r_std__basic_istream__char_std__char_traits__char______r_std__basic_istreamT_char_std__char_traitsT_char_t_t swig_types[73]
+#define SWIGTYPE_p_f_r_std__basic_ostream__char_std__char_traits__char______r_std__basic_iostreamT_char_std__char_traitsT_char_t_t swig_types[74]
+#define SWIGTYPE_p_f_r_std__basic_ostream__char_std__char_traits__char______r_std__basic_ostreamT_char_std__char_traitsT_char_t_t swig_types[75]
+#define SWIGTYPE_p_f_r_std__ios_base__r_std__basic_iosT_char_std__char_traitsT_char_t_t swig_types[76]
+#define SWIGTYPE_p_f_r_std__ios_base__r_std__basic_iostreamT_char_std__char_traitsT_char_t_t swig_types[77]
+#define SWIGTYPE_p_f_r_std__ios_base__r_std__basic_istreamT_char_std__char_traitsT_char_t_t swig_types[78]
+#define SWIGTYPE_p_f_r_std__ios_base__r_std__basic_ostreamT_char_std__char_traitsT_char_t_t swig_types[79]
+#define SWIGTYPE_p_f_r_std__ios_base__r_std__ios_base swig_types[80]
+#define SWIGTYPE_p_first_type swig_types[81]
+#define SWIGTYPE_p_float swig_types[82]
+#define SWIGTYPE_p_fmtflags swig_types[83]
+#define SWIGTYPE_p_int swig_types[84]
+#define SWIGTYPE_p_int_type swig_types[85]
+#define SWIGTYPE_p_iostate swig_types[86]
+#define SWIGTYPE_p_key_type swig_types[87]
+#define SWIGTYPE_p_long swig_types[88]
+#define SWIGTYPE_p_long_double swig_types[89]
+#define SWIGTYPE_p_long_long swig_types[90]
+#define SWIGTYPE_p_mapped_type swig_types[91]
+#define SWIGTYPE_p_off_type swig_types[92]
+#define SWIGTYPE_p_openmode swig_types[93]
+#define SWIGTYPE_p_p_PyObject swig_types[94]
+#define SWIGTYPE_p_p_void swig_types[95]
+#define SWIGTYPE_p_pos_type swig_types[96]
+#define SWIGTYPE_p_second_type swig_types[97]
+#define SWIGTYPE_p_seekdir swig_types[98]
+#define SWIGTYPE_p_short swig_types[99]
+#define SWIGTYPE_p_size_t swig_types[100]
+#define SWIGTYPE_p_size_type swig_types[101]
+#define SWIGTYPE_p_state_type swig_types[102]
+#define SWIGTYPE_p_std__allocatorT_double_t swig_types[103]
+#define SWIGTYPE_p_std__allocatorT_int_t swig_types[104]
+#define SWIGTYPE_p_std__allocatorT_std__pairT_int_const_int_t_t swig_types[105]
+#define SWIGTYPE_p_std__allocatorT_std__pairT_int_int_t_t swig_types[106]
+#define SWIGTYPE_p_std__allocatorT_std__pairT_std__string_const_double_t_t swig_types[107]
+#define SWIGTYPE_p_std__allocatorT_std__pairT_std__string_const_std__string_t_t swig_types[108]
+#define SWIGTYPE_p_std__allocatorT_std__string_t swig_types[109]
+#define SWIGTYPE_p_std__allocatorT_std__vectorT_int_std__allocatorT_int_t_t_t swig_types[110]
+#define SWIGTYPE_p_std__allocatorT_std__vectorT_std__vectorT_double_std__allocatorT_double_t_t_std__allocatorT_std__vectorT_double_std__allocatorT_double_t_t_t_t_t swig_types[111]
+#define SWIGTYPE_p_std__basic_iosT_char_std__char_traitsT_char_t_t swig_types[112]
+#define SWIGTYPE_p_std__basic_iostreamT_char_std__char_traitsT_char_t_t swig_types[113]
+#define SWIGTYPE_p_std__basic_istreamT_char_std__char_traitsT_char_t_t swig_types[114]
+#define SWIGTYPE_p_std__basic_ostreamT_char_std__char_traitsT_char_t_t swig_types[115]
+#define SWIGTYPE_p_std__basic_streambufT_char_std__char_traitsT_char_t_t swig_types[116]
+#define SWIGTYPE_p_std__basic_stringT_char_std__char_traitsT_char_t_std__allocatorT_char_t_t swig_types[117]
+#define SWIGTYPE_p_std__ios_base swig_types[118]
+#define SWIGTYPE_p_std__lessT_int_t swig_types[119]
+#define SWIGTYPE_p_std__lessT_std__string_t swig_types[120]
+#define SWIGTYPE_p_std__locale swig_types[121]
+#define SWIGTYPE_p_std__mapT_int_int_std__lessT_int_t_std__allocatorT_std__pairT_int_const_int_t_t_t swig_types[122]
+#define SWIGTYPE_p_std__mapT_std__string_double_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_double_t_t_t swig_types[123]
+#define SWIGTYPE_p_std__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t swig_types[124]
+#define SWIGTYPE_p_std__pairT_int_int_t swig_types[125]
+#define SWIGTYPE_p_std__setT_int_std__lessT_int_t_std__allocatorT_int_t_t swig_types[126]
+#define SWIGTYPE_p_std__vectorT_double_std__allocatorT_double_t_t swig_types[127]
+#define SWIGTYPE_p_std__vectorT_int_std__allocatorT_int_t_t swig_types[128]
+#define SWIGTYPE_p_std__vectorT_std__pairT_int_int_t_std__allocatorT_std__pairT_int_int_t_t_t swig_types[129]
+#define SWIGTYPE_p_std__vectorT_std__string_std__allocatorT_std__string_t_t swig_types[130]
+#define SWIGTYPE_p_std__vectorT_std__vectorT_double_std__allocatorT_double_t_t_std__allocatorT_std__vectorT_double_std__allocatorT_double_t_t_t_t swig_types[131]
+#define SWIGTYPE_p_std__vectorT_std__vectorT_int_std__allocatorT_int_t_t_std__allocatorT_std__vectorT_int_std__allocatorT_int_t_t_t_t swig_types[132]
+#define SWIGTYPE_p_std__vectorT_std__vectorT_std__vectorT_double_std__allocatorT_double_t_t_std__allocatorT_std__vectorT_double_std__allocatorT_double_t_t_t_t_std__allocatorT_std__vectorT_std__vectorT_double_std__allocatorT_double_t_t_std__allocatorT_std__vectorT_double_std__allocatorT_double_t_t_t_t_t_t swig_types[133]
+#define SWIGTYPE_p_streamoff swig_types[134]
+#define SWIGTYPE_p_streampos swig_types[135]
+#define SWIGTYPE_p_swig__SwigPyIterator swig_types[136]
+#define SWIGTYPE_p_traits_type swig_types[137]
+#define SWIGTYPE_p_unsigned_int swig_types[138]
+#define SWIGTYPE_p_unsigned_long swig_types[139]
+#define SWIGTYPE_p_unsigned_long_long swig_types[140]
+#define SWIGTYPE_p_unsigned_short swig_types[141]
+#define SWIGTYPE_p_value_type swig_types[142]
+static swig_type_info *swig_types[144];
+static swig_module_info swig_module = {swig_types, 143, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -3139,16 +3163,16 @@ static swig_module_info swig_module = {swig_types, 119, 0, 0, 0, 0};
 #endif
 
 /*-----------------------------------------------
-              @(target):= _gridforceplugin.so
+              @(target):= _randombatchewaldplugin.so
   ------------------------------------------------*/
 #if PY_VERSION_HEX >= 0x03000000
-#  define SWIG_init    PyInit__gridforceplugin
+#  define SWIG_init    PyInit__randombatchewaldplugin
 
 #else
-#  define SWIG_init    init_gridforceplugin
+#  define SWIG_init    init_randombatchewaldplugin
 
 #endif
-#define SWIG_name    "_gridforceplugin"
+#define SWIG_name    "_randombatchewaldplugin"
 
 #define SWIGVERSION 0x030012 
 #define SWIG_VERSION SWIGVERSION
@@ -6838,7 +6862,7 @@ SWIGINTERN void std_set_Sl_int_Sg__erase__SWIG_1(std::set< int > *self,std::set<
 SWIGINTERN void std_set_Sl_int_Sg__erase__SWIG_2(std::set< int > *self,std::set< int >::iterator first,std::set< int >::iterator last){ self->erase(first, last); }
 
 
-#include "GridForce.h"
+#include "openmmapi/include/RandomBatchEwald.h"
 #include "OpenMM.h"
 #include "OpenMMAmoeba.h"
 #include "OpenMMDrude.h"
@@ -29390,22 +29414,22 @@ SWIGINTERN PyObject *seti_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject 
   return SWIG_Py_Void();
 }
 
-SWIGINTERN PyObject *_wrap_new_GridForce(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_new_RandomBatchEwald(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  GridForcePlugin::GridForce *result = 0 ;
+  RandomBatchEwaldPlugin::RandomBatchEwald *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)":new_GridForce")) SWIG_fail;
-  result = (GridForcePlugin::GridForce *)new GridForcePlugin::GridForce();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_GridForcePlugin__GridForce, SWIG_POINTER_NEW |  0 );
+  if (!PyArg_ParseTuple(args,(char *)":new_RandomBatchEwald")) SWIG_fail;
+  result = (RandomBatchEwaldPlugin::RandomBatchEwald *)new RandomBatchEwaldPlugin::RandomBatchEwald();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_RandomBatchEwaldPlugin__RandomBatchEwald, SWIG_POINTER_NEW |  0 );
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_GridForce_addGridCounts(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_RandomBatchEwald_addGridCounts(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  GridForcePlugin::GridForce *arg1 = (GridForcePlugin::GridForce *) 0 ;
+  RandomBatchEwaldPlugin::RandomBatchEwald *arg1 = (RandomBatchEwaldPlugin::RandomBatchEwald *) 0 ;
   int arg2 ;
   int arg3 ;
   int arg4 ;
@@ -29422,25 +29446,25 @@ SWIGINTERN PyObject *_wrap_GridForce_addGridCounts(PyObject *SWIGUNUSEDPARM(self
   PyObject * obj2 = 0 ;
   PyObject * obj3 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OOOO:GridForce_addGridCounts",&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_GridForcePlugin__GridForce, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OOOO:RandomBatchEwald_addGridCounts",&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_RandomBatchEwaldPlugin__RandomBatchEwald, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "GridForce_addGridCounts" "', argument " "1"" of type '" "GridForcePlugin::GridForce *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "RandomBatchEwald_addGridCounts" "', argument " "1"" of type '" "RandomBatchEwaldPlugin::RandomBatchEwald *""'"); 
   }
-  arg1 = reinterpret_cast< GridForcePlugin::GridForce * >(argp1);
+  arg1 = reinterpret_cast< RandomBatchEwaldPlugin::RandomBatchEwald * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "GridForce_addGridCounts" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "RandomBatchEwald_addGridCounts" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
   ecode3 = SWIG_AsVal_int(obj2, &val3);
   if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "GridForce_addGridCounts" "', argument " "3"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "RandomBatchEwald_addGridCounts" "', argument " "3"" of type '" "int""'");
   } 
   arg3 = static_cast< int >(val3);
   ecode4 = SWIG_AsVal_int(obj3, &val4);
   if (!SWIG_IsOK(ecode4)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "GridForce_addGridCounts" "', argument " "4"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "RandomBatchEwald_addGridCounts" "', argument " "4"" of type '" "int""'");
   } 
   arg4 = static_cast< int >(val4);
   (arg1)->addGridCounts(arg2,arg3,arg4);
@@ -29451,9 +29475,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_GridForce_addGridSpacing(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_RandomBatchEwald_addGridSpacing(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  GridForcePlugin::GridForce *arg1 = (GridForcePlugin::GridForce *) 0 ;
+  RandomBatchEwaldPlugin::RandomBatchEwald *arg1 = (RandomBatchEwaldPlugin::RandomBatchEwald *) 0 ;
   double arg2 ;
   double arg3 ;
   double arg4 ;
@@ -29473,19 +29497,19 @@ SWIGINTERN PyObject *_wrap_GridForce_addGridSpacing(PyObject *SWIGUNUSEDPARM(sel
   PyObject * obj2 = 0 ;
   PyObject * obj3 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OOOO:GridForce_addGridSpacing",&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_GridForcePlugin__GridForce, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OOOO:RandomBatchEwald_addGridSpacing",&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_RandomBatchEwaldPlugin__RandomBatchEwald, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "GridForce_addGridSpacing" "', argument " "1"" of type '" "GridForcePlugin::GridForce *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "RandomBatchEwald_addGridSpacing" "', argument " "1"" of type '" "RandomBatchEwaldPlugin::RandomBatchEwald *""'"); 
   }
-  arg1 = reinterpret_cast< GridForcePlugin::GridForce * >(argp1);
+  arg1 = reinterpret_cast< RandomBatchEwaldPlugin::RandomBatchEwald * >(argp1);
   stripped2 = Py_StripOpenMMUnits(obj1);
   if (stripped2 == NULL) {
     SWIG_fail; 
   }
   res2 = SWIG_AsVal_double(stripped2, &argp2);
   if (!SWIG_IsOK(res2)) {
-    PyErr_SetString(PyExc_ValueError, "in method GridForce_addGridSpacing, argument 2 could not be converted to type double");
+    PyErr_SetString(PyExc_ValueError, "in method RandomBatchEwald_addGridSpacing, argument 2 could not be converted to type double");
     SWIG_fail;
   }
   arg2 = (double)(argp2);
@@ -29496,7 +29520,7 @@ SWIGINTERN PyObject *_wrap_GridForce_addGridSpacing(PyObject *SWIGUNUSEDPARM(sel
   }
   res3 = SWIG_AsVal_double(stripped3, &argp3);
   if (!SWIG_IsOK(res3)) {
-    PyErr_SetString(PyExc_ValueError, "in method GridForce_addGridSpacing, argument 3 could not be converted to type double");
+    PyErr_SetString(PyExc_ValueError, "in method RandomBatchEwald_addGridSpacing, argument 3 could not be converted to type double");
     SWIG_fail;
   }
   arg3 = (double)(argp3);
@@ -29507,7 +29531,7 @@ SWIGINTERN PyObject *_wrap_GridForce_addGridSpacing(PyObject *SWIGUNUSEDPARM(sel
   }
   res4 = SWIG_AsVal_double(stripped4, &argp4);
   if (!SWIG_IsOK(res4)) {
-    PyErr_SetString(PyExc_ValueError, "in method GridForce_addGridSpacing, argument 4 could not be converted to type double");
+    PyErr_SetString(PyExc_ValueError, "in method RandomBatchEwald_addGridSpacing, argument 4 could not be converted to type double");
     SWIG_fail;
   }
   arg4 = (double)(argp4);
@@ -29520,9 +29544,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_GridForce_addGridValue(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_RandomBatchEwald_addGridValue(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  GridForcePlugin::GridForce *arg1 = (GridForcePlugin::GridForce *) 0 ;
+  RandomBatchEwaldPlugin::RandomBatchEwald *arg1 = (RandomBatchEwaldPlugin::RandomBatchEwald *) 0 ;
   double arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -29532,19 +29556,19 @@ SWIGINTERN PyObject *_wrap_GridForce_addGridValue(PyObject *SWIGUNUSEDPARM(self)
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:GridForce_addGridValue",&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_GridForcePlugin__GridForce, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:RandomBatchEwald_addGridValue",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_RandomBatchEwaldPlugin__RandomBatchEwald, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "GridForce_addGridValue" "', argument " "1"" of type '" "GridForcePlugin::GridForce *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "RandomBatchEwald_addGridValue" "', argument " "1"" of type '" "RandomBatchEwaldPlugin::RandomBatchEwald *""'"); 
   }
-  arg1 = reinterpret_cast< GridForcePlugin::GridForce * >(argp1);
+  arg1 = reinterpret_cast< RandomBatchEwaldPlugin::RandomBatchEwald * >(argp1);
   stripped2 = Py_StripOpenMMUnits(obj1);
   if (stripped2 == NULL) {
     SWIG_fail; 
   }
   res2 = SWIG_AsVal_double(stripped2, &argp2);
   if (!SWIG_IsOK(res2)) {
-    PyErr_SetString(PyExc_ValueError, "in method GridForce_addGridValue, argument 2 could not be converted to type double");
+    PyErr_SetString(PyExc_ValueError, "in method RandomBatchEwald_addGridValue, argument 2 could not be converted to type double");
     SWIG_fail;
   }
   arg2 = (double)(argp2);
@@ -29557,9 +29581,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_GridForce_addScalingFactor(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_RandomBatchEwald_addScalingFactor(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  GridForcePlugin::GridForce *arg1 = (GridForcePlugin::GridForce *) 0 ;
+  RandomBatchEwaldPlugin::RandomBatchEwald *arg1 = (RandomBatchEwaldPlugin::RandomBatchEwald *) 0 ;
   double arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -29569,19 +29593,19 @@ SWIGINTERN PyObject *_wrap_GridForce_addScalingFactor(PyObject *SWIGUNUSEDPARM(s
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:GridForce_addScalingFactor",&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_GridForcePlugin__GridForce, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:RandomBatchEwald_addScalingFactor",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_RandomBatchEwaldPlugin__RandomBatchEwald, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "GridForce_addScalingFactor" "', argument " "1"" of type '" "GridForcePlugin::GridForce *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "RandomBatchEwald_addScalingFactor" "', argument " "1"" of type '" "RandomBatchEwaldPlugin::RandomBatchEwald *""'"); 
   }
-  arg1 = reinterpret_cast< GridForcePlugin::GridForce * >(argp1);
+  arg1 = reinterpret_cast< RandomBatchEwaldPlugin::RandomBatchEwald * >(argp1);
   stripped2 = Py_StripOpenMMUnits(obj1);
   if (stripped2 == NULL) {
     SWIG_fail; 
   }
   res2 = SWIG_AsVal_double(stripped2, &argp2);
   if (!SWIG_IsOK(res2)) {
-    PyErr_SetString(PyExc_ValueError, "in method GridForce_addScalingFactor, argument 2 could not be converted to type double");
+    PyErr_SetString(PyExc_ValueError, "in method RandomBatchEwald_addScalingFactor, argument 2 could not be converted to type double");
     SWIG_fail;
   }
   arg2 = (double)(argp2);
@@ -29594,9 +29618,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_GridForce_getGridParameters(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_RandomBatchEwald_getGridParameters(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  GridForcePlugin::GridForce *arg1 = (GridForcePlugin::GridForce *) 0 ;
+  RandomBatchEwaldPlugin::RandomBatchEwald *arg1 = (RandomBatchEwaldPlugin::RandomBatchEwald *) 0 ;
   std::vector< int,std::allocator< int > > *arg2 = 0 ;
   std::vector< double,std::allocator< double > > *arg3 = 0 ;
   std::vector< double,std::allocator< double > > *arg4 = 0 ;
@@ -29617,45 +29641,45 @@ SWIGINTERN PyObject *_wrap_GridForce_getGridParameters(PyObject *SWIGUNUSEDPARM(
   PyObject * obj3 = 0 ;
   PyObject * obj4 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OOOOO:GridForce_getGridParameters",&obj0,&obj1,&obj2,&obj3,&obj4)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_GridForcePlugin__GridForce, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OOOOO:RandomBatchEwald_getGridParameters",&obj0,&obj1,&obj2,&obj3,&obj4)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_RandomBatchEwaldPlugin__RandomBatchEwald, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "GridForce_getGridParameters" "', argument " "1"" of type '" "GridForcePlugin::GridForce const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "RandomBatchEwald_getGridParameters" "', argument " "1"" of type '" "RandomBatchEwaldPlugin::RandomBatchEwald const *""'"); 
   }
-  arg1 = reinterpret_cast< GridForcePlugin::GridForce * >(argp1);
+  arg1 = reinterpret_cast< RandomBatchEwaldPlugin::RandomBatchEwald * >(argp1);
   res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_std__vectorT_int_std__allocatorT_int_t_t,  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "GridForce_getGridParameters" "', argument " "2"" of type '" "std::vector< int,std::allocator< int > > &""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "RandomBatchEwald_getGridParameters" "', argument " "2"" of type '" "std::vector< int,std::allocator< int > > &""'"); 
   }
   if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "GridForce_getGridParameters" "', argument " "2"" of type '" "std::vector< int,std::allocator< int > > &""'"); 
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "RandomBatchEwald_getGridParameters" "', argument " "2"" of type '" "std::vector< int,std::allocator< int > > &""'"); 
   }
   arg2 = reinterpret_cast< std::vector< int,std::allocator< int > > * >(argp2);
   res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_std__vectorT_double_std__allocatorT_double_t_t,  0 );
   if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "GridForce_getGridParameters" "', argument " "3"" of type '" "std::vector< double,std::allocator< double > > &""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "RandomBatchEwald_getGridParameters" "', argument " "3"" of type '" "std::vector< double,std::allocator< double > > &""'"); 
   }
   if (!argp3) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "GridForce_getGridParameters" "', argument " "3"" of type '" "std::vector< double,std::allocator< double > > &""'"); 
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "RandomBatchEwald_getGridParameters" "', argument " "3"" of type '" "std::vector< double,std::allocator< double > > &""'"); 
   }
   arg3 = reinterpret_cast< std::vector< double,std::allocator< double > > * >(argp3);
   res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_std__vectorT_double_std__allocatorT_double_t_t,  0 );
   if (!SWIG_IsOK(res4)) {
-    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "GridForce_getGridParameters" "', argument " "4"" of type '" "std::vector< double,std::allocator< double > > &""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "RandomBatchEwald_getGridParameters" "', argument " "4"" of type '" "std::vector< double,std::allocator< double > > &""'"); 
   }
   if (!argp4) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "GridForce_getGridParameters" "', argument " "4"" of type '" "std::vector< double,std::allocator< double > > &""'"); 
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "RandomBatchEwald_getGridParameters" "', argument " "4"" of type '" "std::vector< double,std::allocator< double > > &""'"); 
   }
   arg4 = reinterpret_cast< std::vector< double,std::allocator< double > > * >(argp4);
   res5 = SWIG_ConvertPtr(obj4, &argp5, SWIGTYPE_p_std__vectorT_double_std__allocatorT_double_t_t,  0 );
   if (!SWIG_IsOK(res5)) {
-    SWIG_exception_fail(SWIG_ArgError(res5), "in method '" "GridForce_getGridParameters" "', argument " "5"" of type '" "std::vector< double,std::allocator< double > > &""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res5), "in method '" "RandomBatchEwald_getGridParameters" "', argument " "5"" of type '" "std::vector< double,std::allocator< double > > &""'"); 
   }
   if (!argp5) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "GridForce_getGridParameters" "', argument " "5"" of type '" "std::vector< double,std::allocator< double > > &""'"); 
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "RandomBatchEwald_getGridParameters" "', argument " "5"" of type '" "std::vector< double,std::allocator< double > > &""'"); 
   }
   arg5 = reinterpret_cast< std::vector< double,std::allocator< double > > * >(argp5);
-  ((GridForcePlugin::GridForce const *)arg1)->getGridParameters(*arg2,*arg3,*arg4,*arg5);
+  ((RandomBatchEwaldPlugin::RandomBatchEwald const *)arg1)->getGridParameters(*arg2,*arg3,*arg4,*arg5);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -29663,9 +29687,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_GridForce_updateParametersInContext(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_RandomBatchEwald_updateParametersInContext(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  GridForcePlugin::GridForce *arg1 = (GridForcePlugin::GridForce *) 0 ;
+  RandomBatchEwaldPlugin::RandomBatchEwald *arg1 = (RandomBatchEwaldPlugin::RandomBatchEwald *) 0 ;
   OpenMM::Context *arg2 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -29674,18 +29698,18 @@ SWIGINTERN PyObject *_wrap_GridForce_updateParametersInContext(PyObject *SWIGUNU
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:GridForce_updateParametersInContext",&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_GridForcePlugin__GridForce, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:RandomBatchEwald_updateParametersInContext",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_RandomBatchEwaldPlugin__RandomBatchEwald, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "GridForce_updateParametersInContext" "', argument " "1"" of type '" "GridForcePlugin::GridForce *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "RandomBatchEwald_updateParametersInContext" "', argument " "1"" of type '" "RandomBatchEwaldPlugin::RandomBatchEwald *""'"); 
   }
-  arg1 = reinterpret_cast< GridForcePlugin::GridForce * >(argp1);
+  arg1 = reinterpret_cast< RandomBatchEwaldPlugin::RandomBatchEwald * >(argp1);
   res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_OpenMM__Context,  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "GridForce_updateParametersInContext" "', argument " "2"" of type '" "OpenMM::Context &""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "RandomBatchEwald_updateParametersInContext" "', argument " "2"" of type '" "OpenMM::Context &""'"); 
   }
   if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "GridForce_updateParametersInContext" "', argument " "2"" of type '" "OpenMM::Context &""'"); 
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "RandomBatchEwald_updateParametersInContext" "', argument " "2"" of type '" "OpenMM::Context &""'"); 
   }
   arg2 = reinterpret_cast< OpenMM::Context * >(argp2);
   (arg1)->updateParametersInContext(*arg2);
@@ -29696,19 +29720,19 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_delete_GridForce(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_delete_RandomBatchEwald(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  GridForcePlugin::GridForce *arg1 = (GridForcePlugin::GridForce *) 0 ;
+  RandomBatchEwaldPlugin::RandomBatchEwald *arg1 = (RandomBatchEwaldPlugin::RandomBatchEwald *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:delete_GridForce",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_GridForcePlugin__GridForce, SWIG_POINTER_DISOWN |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_RandomBatchEwald",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_RandomBatchEwaldPlugin__RandomBatchEwald, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_GridForce" "', argument " "1"" of type '" "GridForcePlugin::GridForce *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_RandomBatchEwald" "', argument " "1"" of type '" "RandomBatchEwaldPlugin::RandomBatchEwald *""'"); 
   }
-  arg1 = reinterpret_cast< GridForcePlugin::GridForce * >(argp1);
+  arg1 = reinterpret_cast< RandomBatchEwaldPlugin::RandomBatchEwald * >(argp1);
   delete arg1;
   resultobj = SWIG_Py_Void();
   return resultobj;
@@ -29717,10 +29741,10 @@ fail:
 }
 
 
-SWIGINTERN PyObject *GridForce_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *RandomBatchEwald_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *obj;
   if (!PyArg_ParseTuple(args,(char *)"O:swigregister", &obj)) return NULL;
-  SWIG_TypeNewClientData(SWIGTYPE_p_GridForcePlugin__GridForce, SWIG_NewClientData(obj));
+  SWIG_TypeNewClientData(SWIGTYPE_p_RandomBatchEwaldPlugin__RandomBatchEwald, SWIG_NewClientData(obj));
   return SWIG_Py_Void();
 }
 
@@ -30141,32 +30165,134 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"seti_insert", _wrap_seti_insert, METH_VARARGS, NULL},
 	 { (char *)"delete_seti", _wrap_delete_seti, METH_VARARGS, (char *)"delete_seti(seti self)"},
 	 { (char *)"seti_swigregister", seti_swigregister, METH_VARARGS, NULL},
-	 { (char *)"new_GridForce", _wrap_new_GridForce, METH_VARARGS, (char *)"new_GridForce() -> GridForce"},
-	 { (char *)"GridForce_addGridCounts", _wrap_GridForce_addGridCounts, METH_VARARGS, (char *)"GridForce_addGridCounts(GridForce self, int nx, int ny, int nz)"},
-	 { (char *)"GridForce_addGridSpacing", _wrap_GridForce_addGridSpacing, METH_VARARGS, (char *)"GridForce_addGridSpacing(GridForce self, double dx, double dy, double dz)"},
-	 { (char *)"GridForce_addGridValue", _wrap_GridForce_addGridValue, METH_VARARGS, (char *)"GridForce_addGridValue(GridForce self, double val)"},
-	 { (char *)"GridForce_addScalingFactor", _wrap_GridForce_addScalingFactor, METH_VARARGS, (char *)"GridForce_addScalingFactor(GridForce self, double val)"},
-	 { (char *)"GridForce_getGridParameters", _wrap_GridForce_getGridParameters, METH_VARARGS, (char *)"GridForce_getGridParameters(GridForce self, std::vector< int,std::allocator< int > > & counts, std::vector< double,std::allocator< double > > & spacing, std::vector< double,std::allocator< double > > & vals, std::vector< double,std::allocator< double > > & scaling_factors)"},
-	 { (char *)"GridForce_updateParametersInContext", _wrap_GridForce_updateParametersInContext, METH_VARARGS, (char *)"GridForce_updateParametersInContext(GridForce self, Context context)"},
-	 { (char *)"delete_GridForce", _wrap_delete_GridForce, METH_VARARGS, (char *)"delete_GridForce(GridForce self)"},
-	 { (char *)"GridForce_swigregister", GridForce_swigregister, METH_VARARGS, NULL},
+	 { (char *)"new_RandomBatchEwald", _wrap_new_RandomBatchEwald, METH_VARARGS, (char *)"new_RandomBatchEwald() -> RandomBatchEwald"},
+	 { (char *)"RandomBatchEwald_addGridCounts", _wrap_RandomBatchEwald_addGridCounts, METH_VARARGS, (char *)"RandomBatchEwald_addGridCounts(RandomBatchEwald self, int nx, int ny, int nz)"},
+	 { (char *)"RandomBatchEwald_addGridSpacing", _wrap_RandomBatchEwald_addGridSpacing, METH_VARARGS, (char *)"RandomBatchEwald_addGridSpacing(RandomBatchEwald self, double dx, double dy, double dz)"},
+	 { (char *)"RandomBatchEwald_addGridValue", _wrap_RandomBatchEwald_addGridValue, METH_VARARGS, (char *)"RandomBatchEwald_addGridValue(RandomBatchEwald self, double val)"},
+	 { (char *)"RandomBatchEwald_addScalingFactor", _wrap_RandomBatchEwald_addScalingFactor, METH_VARARGS, (char *)"RandomBatchEwald_addScalingFactor(RandomBatchEwald self, double val)"},
+	 { (char *)"RandomBatchEwald_getGridParameters", _wrap_RandomBatchEwald_getGridParameters, METH_VARARGS, (char *)"RandomBatchEwald_getGridParameters(RandomBatchEwald self, std::vector< int,std::allocator< int > > & counts, std::vector< double,std::allocator< double > > & spacing, std::vector< double,std::allocator< double > > & vals, std::vector< double,std::allocator< double > > & scaling_factors)"},
+	 { (char *)"RandomBatchEwald_updateParametersInContext", _wrap_RandomBatchEwald_updateParametersInContext, METH_VARARGS, (char *)"RandomBatchEwald_updateParametersInContext(RandomBatchEwald self, Context context)"},
+	 { (char *)"delete_RandomBatchEwald", _wrap_delete_RandomBatchEwald, METH_VARARGS, (char *)"delete_RandomBatchEwald(RandomBatchEwald self)"},
+	 { (char *)"RandomBatchEwald_swigregister", RandomBatchEwald_swigregister, METH_VARARGS, NULL},
 	 { NULL, NULL, 0, NULL }
 };
 
 
 /* -------- TYPE CONVERSION AND EQUIVALENCE RULES (BEGIN) -------- */
 
-static void *_p_std__basic_ostreamT_char_std__char_traitsT_char_t_tTo_p_std__ios_base(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((std::ios_base *) (std::basic_ios< char > *) ((std::basic_ostream< char,std::char_traits< char > > *) x));
+static void *_p_OpenMM__CustomCVForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::CustomCVForce *) x));
 }
-static void *_p_std__basic_istreamT_char_std__char_traitsT_char_t_tTo_p_std__ios_base(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((std::ios_base *) (std::basic_ios< char > *) ((std::basic_istream< char,std::char_traits< char > > *) x));
+static void *_p_OpenMM__CustomGBForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::CustomGBForce *) x));
 }
-static void *_p_std__basic_iostreamT_char_std__char_traitsT_char_t_tTo_p_std__ios_base(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((std::ios_base *) (std::basic_ios< char > *)(std::basic_istream< char > *) ((std::basic_iostream< char,std::char_traits< char > > *) x));
+static void *_p_OpenMM__AndersenThermostatTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::AndersenThermostat *) x));
 }
-static void *_p_std__basic_iosT_char_std__char_traitsT_char_t_tTo_p_std__ios_base(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((std::ios_base *)  ((std::basic_ios< char,std::char_traits< char > > *) x));
+static void *_p_OpenMM__CustomCompoundBondForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::CustomCompoundBondForce *) x));
+}
+static void *_p_OpenMM__HarmonicBondForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::HarmonicBondForce *) x));
+}
+static void *_p_OpenMM__CustomCentroidBondForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::CustomCentroidBondForce *) x));
+}
+static void *_p_OpenMM__CustomHbondForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::CustomHbondForce *) x));
+}
+static void *_p_OpenMM__CustomBondForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::CustomBondForce *) x));
+}
+static void *_p_OpenMM__RMSDForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::RMSDForce *) x));
+}
+static void *_p_OpenMM__CustomExternalForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::CustomExternalForce *) x));
+}
+static void *_p_OpenMM__AmoebaTorsionTorsionForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::AmoebaTorsionTorsionForce *) x));
+}
+static void *_p_OpenMM__AmoebaWcaDispersionForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::AmoebaWcaDispersionForce *) x));
+}
+static void *_p_OpenMM__CustomTorsionForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::CustomTorsionForce *) x));
+}
+static void *_p_OpenMM__PeriodicTorsionForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::PeriodicTorsionForce *) x));
+}
+static void *_p_OpenMM__RBTorsionForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::RBTorsionForce *) x));
+}
+static void *_p_OpenMM__CMMotionRemoverTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::CMMotionRemover *) x));
+}
+static void *_p_OpenMM__CMAPTorsionForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::CMAPTorsionForce *) x));
+}
+static void *_p_OpenMM__GBSAOBCForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::GBSAOBCForce *) x));
+}
+static void *_p_RandomBatchEwaldPlugin__RandomBatchEwaldTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((RandomBatchEwaldPlugin::RandomBatchEwald *) x));
+}
+static void *_p_OpenMM__AmoebaVdwForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::AmoebaVdwForce *) x));
+}
+static void *_p_OpenMM__RPMDMonteCarloBarostatTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::RPMDMonteCarloBarostat *) x));
+}
+static void *_p_OpenMM__MonteCarloMembraneBarostatTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::MonteCarloMembraneBarostat *) x));
+}
+static void *_p_OpenMM__MonteCarloAnisotropicBarostatTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::MonteCarloAnisotropicBarostat *) x));
+}
+static void *_p_OpenMM__MonteCarloFlexibleBarostatTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::MonteCarloFlexibleBarostat *) x));
+}
+static void *_p_OpenMM__MonteCarloBarostatTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::MonteCarloBarostat *) x));
+}
+static void *_p_OpenMM__HarmonicAngleForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::HarmonicAngleForce *) x));
+}
+static void *_p_OpenMM__DrudeForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::DrudeForce *) x));
+}
+static void *_p_OpenMM__AmoebaMultipoleForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::AmoebaMultipoleForce *) x));
+}
+static void *_p_OpenMM__CustomManyParticleForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::CustomManyParticleForce *) x));
+}
+static void *_p_OpenMM__GayBerneForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::GayBerneForce *) x));
+}
+static void *_p_OpenMM__CustomAngleForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::CustomAngleForce *) x));
+}
+static void *_p_OpenMM__ATMForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::ATMForce *) x));
+}
+static void *_p_OpenMM__NonbondedForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::NonbondedForce *) x));
+}
+static void *_p_OpenMM__CustomNonbondedForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::CustomNonbondedForce *) x));
+}
+static void *_p_OpenMM__AmoebaGeneralizedKirkwoodForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::AmoebaGeneralizedKirkwoodForce *) x));
+}
+static void *_p_OpenMM__HippoNonbondedForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::Force *)  ((OpenMM::HippoNonbondedForce *) x));
+}
+static void *_p_f_r_std__basic_istream__char_std__char_traits__char______r_std__basic_iostreamT_char_std__char_traitsT_char_t_tTo_p_f_r_std__basic_istream__char_std__char_traits__char______r_std__basic_istreamT_char_std__char_traitsT_char_t_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((std::basic_istream< char,std::char_traits< char > > &(*)(std::basic_istream< char,std::char_traits< char > > &))  ((std::basic_iostream< char,std::char_traits< char > > &(*)(std::basic_istream< char,std::char_traits< char > > &)) x));
+}
+static void *_p_f_r_std__basic_ostream__char_std__char_traits__char______r_std__basic_iostreamT_char_std__char_traitsT_char_t_tTo_p_f_r_std__basic_ostream__char_std__char_traits__char______r_std__basic_ostreamT_char_std__char_traitsT_char_t_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((std::basic_ostream< char,std::char_traits< char > > &(*)(std::basic_ostream< char,std::char_traits< char > > &))  ((std::basic_iostream< char,std::char_traits< char > > &(*)(std::basic_ostream< char,std::char_traits< char > > &)) x));
 }
 static void *_p_f_r_std__ios_base__r_std__basic_ostreamT_char_std__char_traitsT_char_t_tTo_p_f_r_std__ios_base__r_std__ios_base(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((std::ios_base &(*)(std::ios_base &)) (std::basic_ios< char > *) ((std::basic_ostream< char,std::char_traits< char > > &(*)(std::ios_base &)) x));
@@ -30180,11 +30306,17 @@ static void *_p_f_r_std__ios_base__r_std__basic_iostreamT_char_std__char_traitsT
 static void *_p_f_r_std__ios_base__r_std__basic_iosT_char_std__char_traitsT_char_t_tTo_p_f_r_std__ios_base__r_std__ios_base(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((std::ios_base &(*)(std::ios_base &))  ((std::basic_ios< char,std::char_traits< char > > &(*)(std::ios_base &)) x));
 }
-static void *_p_f_r_std__basic_istream__char_std__char_traits__char______r_std__basic_iostreamT_char_std__char_traitsT_char_t_tTo_p_f_r_std__basic_istream__char_std__char_traits__char______r_std__basic_istreamT_char_std__char_traitsT_char_t_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((std::basic_istream< char,std::char_traits< char > > &(*)(std::basic_istream< char,std::char_traits< char > > &))  ((std::basic_iostream< char,std::char_traits< char > > &(*)(std::basic_istream< char,std::char_traits< char > > &)) x));
+static void *_p_std__basic_ostreamT_char_std__char_traitsT_char_t_tTo_p_std__ios_base(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((std::ios_base *) (std::basic_ios< char > *) ((std::basic_ostream< char,std::char_traits< char > > *) x));
 }
-static void *_p_f_r_std__basic_ostream__char_std__char_traits__char______r_std__basic_iostreamT_char_std__char_traitsT_char_t_tTo_p_f_r_std__basic_ostream__char_std__char_traits__char______r_std__basic_ostreamT_char_std__char_traitsT_char_t_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((std::basic_ostream< char,std::char_traits< char > > &(*)(std::basic_ostream< char,std::char_traits< char > > &))  ((std::basic_iostream< char,std::char_traits< char > > &(*)(std::basic_ostream< char,std::char_traits< char > > &)) x));
+static void *_p_std__basic_istreamT_char_std__char_traitsT_char_t_tTo_p_std__ios_base(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((std::ios_base *) (std::basic_ios< char > *) ((std::basic_istream< char,std::char_traits< char > > *) x));
+}
+static void *_p_std__basic_iostreamT_char_std__char_traitsT_char_t_tTo_p_std__ios_base(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((std::ios_base *) (std::basic_ios< char > *)(std::basic_istream< char > *) ((std::basic_iostream< char,std::char_traits< char > > *) x));
+}
+static void *_p_std__basic_iosT_char_std__char_traitsT_char_t_tTo_p_std__ios_base(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((std::ios_base *)  ((std::basic_ios< char,std::char_traits< char > > *) x));
 }
 static void *_p_std__basic_ostreamT_char_std__char_traitsT_char_t_tTo_p_std__basic_iosT_char_std__char_traitsT_char_t_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((std::basic_ios< char,std::char_traits< char > > *)  ((std::basic_ostream< char,std::char_traits< char > > *) x));
@@ -30195,116 +30327,8 @@ static void *_p_std__basic_istreamT_char_std__char_traitsT_char_t_tTo_p_std__bas
 static void *_p_std__basic_iostreamT_char_std__char_traitsT_char_t_tTo_p_std__basic_iosT_char_std__char_traitsT_char_t_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((std::basic_ios< char,std::char_traits< char > > *) (std::basic_istream< char > *) ((std::basic_iostream< char,std::char_traits< char > > *) x));
 }
-static void *_p_OpenMM__CustomCVForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::CustomCVForce *) x));
-}
-static void *_p_OpenMM__CustomGBForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::CustomGBForce *) x));
-}
-static void *_p_OpenMM__AndersenThermostatTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::AndersenThermostat *) x));
-}
-static void *_p_OpenMM__HarmonicBondForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::HarmonicBondForce *) x));
-}
-static void *_p_OpenMM__CustomBondForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::CustomBondForce *) x));
-}
-static void *_p_OpenMM__CustomHbondForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::CustomHbondForce *) x));
-}
-static void *_p_OpenMM__RMSDForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::RMSDForce *) x));
-}
-static void *_p_OpenMM__CustomCentroidBondForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::CustomCentroidBondForce *) x));
-}
-static void *_p_OpenMM__CustomCompoundBondForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::CustomCompoundBondForce *) x));
-}
-static void *_p_OpenMM__CustomExternalForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::CustomExternalForce *) x));
-}
-static void *_p_OpenMM__PeriodicTorsionForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::PeriodicTorsionForce *) x));
-}
-static void *_p_OpenMM__AmoebaWcaDispersionForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::AmoebaWcaDispersionForce *) x));
-}
-static void *_p_OpenMM__CustomTorsionForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::CustomTorsionForce *) x));
-}
-static void *_p_OpenMM__RBTorsionForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::RBTorsionForce *) x));
-}
-static void *_p_OpenMM__CMAPTorsionForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::CMAPTorsionForce *) x));
-}
-static void *_p_OpenMM__AmoebaTorsionTorsionForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::AmoebaTorsionTorsionForce *) x));
-}
-static void *_p_OpenMM__CMMotionRemoverTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::CMMotionRemover *) x));
-}
-static void *_p_OpenMM__GBSAOBCForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::GBSAOBCForce *) x));
-}
-static void *_p_OpenMM__AmoebaVdwForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::AmoebaVdwForce *) x));
-}
-static void *_p_OpenMM__MonteCarloAnisotropicBarostatTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::MonteCarloAnisotropicBarostat *) x));
-}
-static void *_p_OpenMM__MonteCarloFlexibleBarostatTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::MonteCarloFlexibleBarostat *) x));
-}
-static void *_p_OpenMM__MonteCarloBarostatTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::MonteCarloBarostat *) x));
-}
-static void *_p_OpenMM__MonteCarloMembraneBarostatTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::MonteCarloMembraneBarostat *) x));
-}
-static void *_p_OpenMM__RPMDMonteCarloBarostatTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::RPMDMonteCarloBarostat *) x));
-}
-static void *_p_OpenMM__DrudeForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::DrudeForce *) x));
-}
-static void *_p_OpenMM__CustomManyParticleForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::CustomManyParticleForce *) x));
-}
-static void *_p_OpenMM__AmoebaMultipoleForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::AmoebaMultipoleForce *) x));
-}
-static void *_p_OpenMM__HarmonicAngleForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::HarmonicAngleForce *) x));
-}
-static void *_p_OpenMM__CustomAngleForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::CustomAngleForce *) x));
-}
-static void *_p_OpenMM__GayBerneForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::GayBerneForce *) x));
-}
-static void *_p_OpenMM__AmoebaGeneralizedKirkwoodForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::AmoebaGeneralizedKirkwoodForce *) x));
-}
-static void *_p_OpenMM__CustomNonbondedForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::CustomNonbondedForce *) x));
-}
-static void *_p_OpenMM__NonbondedForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::NonbondedForce *) x));
-}
-static void *_p_OpenMM__HippoNonbondedForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((OpenMM::HippoNonbondedForce *) x));
-}
-static void *_p_GridForcePlugin__GridForceTo_p_OpenMM__Force(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((OpenMM::Force *)  ((GridForcePlugin::GridForce *) x));
-}
 static void *_p_std__basic_iostreamT_char_std__char_traitsT_char_t_tTo_p_std__basic_istreamT_char_std__char_traitsT_char_t_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((std::basic_istream< char,std::char_traits< char > > *)  ((std::basic_iostream< char,std::char_traits< char > > *) x));
-}
-static void *_p_std__basic_iostreamT_char_std__char_traitsT_char_t_tTo_p_std__basic_ostreamT_char_std__char_traitsT_char_t_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((std::basic_ostream< char,std::char_traits< char > > *)  ((std::basic_iostream< char,std::char_traits< char > > *) x));
 }
 static void *_p_f_r_std__basic_ios__char_std__char_traits__char______r_std__basic_ostreamT_char_std__char_traitsT_char_t_tTo_p_f_r_std__basic_ios__char_std__char_traits__char______r_std__basic_iosT_char_std__char_traitsT_char_t_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((std::basic_ios< char,std::char_traits< char > > &(*)(std::basic_ios< char,std::char_traits< char > > &))  ((std::basic_ostream< char,std::char_traits< char > > &(*)(std::basic_ios< char,std::char_traits< char > > &)) x));
@@ -30315,43 +30339,73 @@ static void *_p_f_r_std__basic_ios__char_std__char_traits__char______r_std__basi
 static void *_p_f_r_std__basic_ios__char_std__char_traits__char______r_std__basic_iostreamT_char_std__char_traitsT_char_t_tTo_p_f_r_std__basic_ios__char_std__char_traits__char______r_std__basic_iosT_char_std__char_traitsT_char_t_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((std::basic_ios< char,std::char_traits< char > > &(*)(std::basic_ios< char,std::char_traits< char > > &)) (std::basic_istream< char > *) ((std::basic_iostream< char,std::char_traits< char > > &(*)(std::basic_ios< char,std::char_traits< char > > &)) x));
 }
-static swig_type_info _swigt__p_GridForcePlugin__GridForce = {"_p_GridForcePlugin__GridForce", "GridForcePlugin::GridForce *", 0, 0, (void*)0, 0};
+static void *_p_std__basic_iostreamT_char_std__char_traitsT_char_t_tTo_p_std__basic_ostreamT_char_std__char_traitsT_char_t_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((std::basic_ostream< char,std::char_traits< char > > *)  ((std::basic_iostream< char,std::char_traits< char > > *) x));
+}
+static void *_p_OpenMM__DrudeNoseHooverIntegratorTo_p_OpenMM__NoseHooverIntegrator(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((OpenMM::NoseHooverIntegrator *)  ((OpenMM::DrudeNoseHooverIntegrator *) x));
+}
+static swig_type_info _swigt__p_OpenMM__ATMForce = {"_p_OpenMM__ATMForce", "OpenMM::ATMForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__AmoebaGeneralizedKirkwoodForce = {"_p_OpenMM__AmoebaGeneralizedKirkwoodForce", "OpenMM::AmoebaGeneralizedKirkwoodForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__AmoebaMultipoleForce = {"_p_OpenMM__AmoebaMultipoleForce", "OpenMM::AmoebaMultipoleForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__AmoebaTorsionTorsionForce = {"_p_OpenMM__AmoebaTorsionTorsionForce", "OpenMM::AmoebaTorsionTorsionForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__AmoebaVdwForce = {"_p_OpenMM__AmoebaVdwForce", "OpenMM::AmoebaVdwForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__AmoebaWcaDispersionForce = {"_p_OpenMM__AmoebaWcaDispersionForce", "OpenMM::AmoebaWcaDispersionForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__AndersenThermostat = {"_p_OpenMM__AndersenThermostat", "OpenMM::AndersenThermostat *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__BrownianIntegrator = {"_p_OpenMM__BrownianIntegrator", "OpenMM::BrownianIntegrator *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__CMAPTorsionForce = {"_p_OpenMM__CMAPTorsionForce", "OpenMM::CMAPTorsionForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__CMMotionRemover = {"_p_OpenMM__CMMotionRemover", "OpenMM::CMMotionRemover *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__CompoundIntegrator = {"_p_OpenMM__CompoundIntegrator", "OpenMM::CompoundIntegrator *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_OpenMM__Context = {"_p_OpenMM__Context", "OpenMM::Context *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__Continuous1DFunction = {"_p_OpenMM__Continuous1DFunction", "OpenMM::Continuous1DFunction *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__Continuous2DFunction = {"_p_OpenMM__Continuous2DFunction", "OpenMM::Continuous2DFunction *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__Continuous3DFunction = {"_p_OpenMM__Continuous3DFunction", "OpenMM::Continuous3DFunction *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__CustomAngleForce = {"_p_OpenMM__CustomAngleForce", "OpenMM::CustomAngleForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__CustomBondForce = {"_p_OpenMM__CustomBondForce", "OpenMM::CustomBondForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__CustomCVForce = {"_p_OpenMM__CustomCVForce", "OpenMM::CustomCVForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__CustomCentroidBondForce = {"_p_OpenMM__CustomCentroidBondForce", "OpenMM::CustomCentroidBondForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__CustomCompoundBondForce = {"_p_OpenMM__CustomCompoundBondForce", "OpenMM::CustomCompoundBondForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__CustomExternalForce = {"_p_OpenMM__CustomExternalForce", "OpenMM::CustomExternalForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__CustomGBForce = {"_p_OpenMM__CustomGBForce", "OpenMM::CustomGBForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__CustomHbondForce = {"_p_OpenMM__CustomHbondForce", "OpenMM::CustomHbondForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__CustomIntegrator = {"_p_OpenMM__CustomIntegrator", "OpenMM::CustomIntegrator *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__CustomManyParticleForce = {"_p_OpenMM__CustomManyParticleForce", "OpenMM::CustomManyParticleForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__CustomNonbondedForce = {"_p_OpenMM__CustomNonbondedForce", "OpenMM::CustomNonbondedForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__CustomTorsionForce = {"_p_OpenMM__CustomTorsionForce", "OpenMM::CustomTorsionForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__Discrete1DFunction = {"_p_OpenMM__Discrete1DFunction", "OpenMM::Discrete1DFunction *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__Discrete2DFunction = {"_p_OpenMM__Discrete2DFunction", "OpenMM::Discrete2DFunction *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__Discrete3DFunction = {"_p_OpenMM__Discrete3DFunction", "OpenMM::Discrete3DFunction *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__DrudeForce = {"_p_OpenMM__DrudeForce", "OpenMM::DrudeForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__DrudeLangevinIntegrator = {"_p_OpenMM__DrudeLangevinIntegrator", "OpenMM::DrudeLangevinIntegrator *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__DrudeSCFIntegrator = {"_p_OpenMM__DrudeSCFIntegrator", "OpenMM::DrudeSCFIntegrator *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_OpenMM__Force = {"_p_OpenMM__Force", "OpenMM::Force *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_OpenMM__CustomCVForce = {"_p_OpenMM__CustomCVForce", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__CustomGBForce = {"_p_OpenMM__CustomGBForce", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__AndersenThermostat = {"_p_OpenMM__AndersenThermostat", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__HarmonicBondForce = {"_p_OpenMM__HarmonicBondForce", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__CustomBondForce = {"_p_OpenMM__CustomBondForce", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__CustomHbondForce = {"_p_OpenMM__CustomHbondForce", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__RMSDForce = {"_p_OpenMM__RMSDForce", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__CustomCentroidBondForce = {"_p_OpenMM__CustomCentroidBondForce", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__CustomCompoundBondForce = {"_p_OpenMM__CustomCompoundBondForce", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__CustomExternalForce = {"_p_OpenMM__CustomExternalForce", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__CustomTorsionForce = {"_p_OpenMM__CustomTorsionForce", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__AmoebaWcaDispersionForce = {"_p_OpenMM__AmoebaWcaDispersionForce", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__PeriodicTorsionForce = {"_p_OpenMM__PeriodicTorsionForce", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__AmoebaTorsionTorsionForce = {"_p_OpenMM__AmoebaTorsionTorsionForce", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__CMAPTorsionForce = {"_p_OpenMM__CMAPTorsionForce", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__RBTorsionForce = {"_p_OpenMM__RBTorsionForce", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__CMMotionRemover = {"_p_OpenMM__CMMotionRemover", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__GBSAOBCForce = {"_p_OpenMM__GBSAOBCForce", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__AmoebaVdwForce = {"_p_OpenMM__AmoebaVdwForce", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__MonteCarloAnisotropicBarostat = {"_p_OpenMM__MonteCarloAnisotropicBarostat", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__MonteCarloFlexibleBarostat = {"_p_OpenMM__MonteCarloFlexibleBarostat", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__MonteCarloBarostat = {"_p_OpenMM__MonteCarloBarostat", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__MonteCarloMembraneBarostat = {"_p_OpenMM__MonteCarloMembraneBarostat", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__RPMDMonteCarloBarostat = {"_p_OpenMM__RPMDMonteCarloBarostat", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__DrudeForce = {"_p_OpenMM__DrudeForce", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__CustomManyParticleForce = {"_p_OpenMM__CustomManyParticleForce", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__AmoebaMultipoleForce = {"_p_OpenMM__AmoebaMultipoleForce", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__HarmonicAngleForce = {"_p_OpenMM__HarmonicAngleForce", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__CustomAngleForce = {"_p_OpenMM__CustomAngleForce", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__GayBerneForce = {"_p_OpenMM__GayBerneForce", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__AmoebaGeneralizedKirkwoodForce = {"_p_OpenMM__AmoebaGeneralizedKirkwoodForce", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__CustomNonbondedForce = {"_p_OpenMM__CustomNonbondedForce", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__NonbondedForce = {"_p_OpenMM__NonbondedForce", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_OpenMM__HippoNonbondedForce = {"_p_OpenMM__HippoNonbondedForce", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_OpenMM__GBSAOBCForce = {"_p_OpenMM__GBSAOBCForce", "OpenMM::GBSAOBCForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__GayBerneForce = {"_p_OpenMM__GayBerneForce", "OpenMM::GayBerneForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__HarmonicAngleForce = {"_p_OpenMM__HarmonicAngleForce", "OpenMM::HarmonicAngleForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__HarmonicBondForce = {"_p_OpenMM__HarmonicBondForce", "OpenMM::HarmonicBondForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__HippoNonbondedForce = {"_p_OpenMM__HippoNonbondedForce", "OpenMM::HippoNonbondedForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__LangevinIntegrator = {"_p_OpenMM__LangevinIntegrator", "OpenMM::LangevinIntegrator *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__LangevinMiddleIntegrator = {"_p_OpenMM__LangevinMiddleIntegrator", "OpenMM::LangevinMiddleIntegrator *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__LocalCoordinatesSite = {"_p_OpenMM__LocalCoordinatesSite", "OpenMM::LocalCoordinatesSite *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__MonteCarloAnisotropicBarostat = {"_p_OpenMM__MonteCarloAnisotropicBarostat", "OpenMM::MonteCarloAnisotropicBarostat *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__MonteCarloBarostat = {"_p_OpenMM__MonteCarloBarostat", "OpenMM::MonteCarloBarostat *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__MonteCarloFlexibleBarostat = {"_p_OpenMM__MonteCarloFlexibleBarostat", "OpenMM::MonteCarloFlexibleBarostat *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__MonteCarloMembraneBarostat = {"_p_OpenMM__MonteCarloMembraneBarostat", "OpenMM::MonteCarloMembraneBarostat *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__NonbondedForce = {"_p_OpenMM__NonbondedForce", "OpenMM::NonbondedForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__NoseHooverIntegrator = {"_p_OpenMM__NoseHooverIntegrator", "OpenMM::NoseHooverIntegrator *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__DrudeNoseHooverIntegrator = {"_p_OpenMM__DrudeNoseHooverIntegrator", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_OpenMM__OutOfPlaneSite = {"_p_OpenMM__OutOfPlaneSite", "OpenMM::OutOfPlaneSite *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__PeriodicTorsionForce = {"_p_OpenMM__PeriodicTorsionForce", "OpenMM::PeriodicTorsionForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__RBTorsionForce = {"_p_OpenMM__RBTorsionForce", "OpenMM::RBTorsionForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__RMSDForce = {"_p_OpenMM__RMSDForce", "OpenMM::RMSDForce *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__RPMDIntegrator = {"_p_OpenMM__RPMDIntegrator", "OpenMM::RPMDIntegrator *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__RPMDMonteCarloBarostat = {"_p_OpenMM__RPMDMonteCarloBarostat", "OpenMM::RPMDMonteCarloBarostat *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__ThreeParticleAverageSite = {"_p_OpenMM__ThreeParticleAverageSite", "OpenMM::ThreeParticleAverageSite *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__TwoParticleAverageSite = {"_p_OpenMM__TwoParticleAverageSite", "OpenMM::TwoParticleAverageSite *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__VariableLangevinIntegrator = {"_p_OpenMM__VariableLangevinIntegrator", "OpenMM::VariableLangevinIntegrator *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__VariableVerletIntegrator = {"_p_OpenMM__VariableVerletIntegrator", "OpenMM::VariableVerletIntegrator *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_OpenMM__VerletIntegrator = {"_p_OpenMM__VerletIntegrator", "OpenMM::VerletIntegrator *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_RandomBatchEwaldPlugin__RandomBatchEwald = {"_p_RandomBatchEwaldPlugin__RandomBatchEwald", "RandomBatchEwaldPlugin::RandomBatchEwald *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_allocator_type = {"_p_allocator_type", "allocator_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_bool = {"_p_bool", "bool *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_char = {"_p_char", "std::basic_istream< char >::char_type *|char *", 0, 0, (void*)0, 0};
@@ -30436,16 +30490,21 @@ static swig_type_info _swigt__p_unsigned_short = {"_p_unsigned_short", "unsigned
 static swig_type_info _swigt__p_value_type = {"_p_value_type", "value_type *", 0, 0, (void*)0, 0};
 
 static swig_type_info *swig_type_initial[] = {
-  &_swigt__p_GridForcePlugin__GridForce,
+  &_swigt__p_OpenMM__ATMForce,
   &_swigt__p_OpenMM__AmoebaGeneralizedKirkwoodForce,
   &_swigt__p_OpenMM__AmoebaMultipoleForce,
   &_swigt__p_OpenMM__AmoebaTorsionTorsionForce,
   &_swigt__p_OpenMM__AmoebaVdwForce,
   &_swigt__p_OpenMM__AmoebaWcaDispersionForce,
   &_swigt__p_OpenMM__AndersenThermostat,
+  &_swigt__p_OpenMM__BrownianIntegrator,
   &_swigt__p_OpenMM__CMAPTorsionForce,
   &_swigt__p_OpenMM__CMMotionRemover,
+  &_swigt__p_OpenMM__CompoundIntegrator,
   &_swigt__p_OpenMM__Context,
+  &_swigt__p_OpenMM__Continuous1DFunction,
+  &_swigt__p_OpenMM__Continuous2DFunction,
+  &_swigt__p_OpenMM__Continuous3DFunction,
   &_swigt__p_OpenMM__CustomAngleForce,
   &_swigt__p_OpenMM__CustomBondForce,
   &_swigt__p_OpenMM__CustomCVForce,
@@ -30454,25 +30513,44 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_OpenMM__CustomExternalForce,
   &_swigt__p_OpenMM__CustomGBForce,
   &_swigt__p_OpenMM__CustomHbondForce,
+  &_swigt__p_OpenMM__CustomIntegrator,
   &_swigt__p_OpenMM__CustomManyParticleForce,
   &_swigt__p_OpenMM__CustomNonbondedForce,
   &_swigt__p_OpenMM__CustomTorsionForce,
+  &_swigt__p_OpenMM__Discrete1DFunction,
+  &_swigt__p_OpenMM__Discrete2DFunction,
+  &_swigt__p_OpenMM__Discrete3DFunction,
   &_swigt__p_OpenMM__DrudeForce,
+  &_swigt__p_OpenMM__DrudeLangevinIntegrator,
+  &_swigt__p_OpenMM__DrudeNoseHooverIntegrator,
+  &_swigt__p_OpenMM__DrudeSCFIntegrator,
   &_swigt__p_OpenMM__Force,
   &_swigt__p_OpenMM__GBSAOBCForce,
   &_swigt__p_OpenMM__GayBerneForce,
   &_swigt__p_OpenMM__HarmonicAngleForce,
   &_swigt__p_OpenMM__HarmonicBondForce,
   &_swigt__p_OpenMM__HippoNonbondedForce,
+  &_swigt__p_OpenMM__LangevinIntegrator,
+  &_swigt__p_OpenMM__LangevinMiddleIntegrator,
+  &_swigt__p_OpenMM__LocalCoordinatesSite,
   &_swigt__p_OpenMM__MonteCarloAnisotropicBarostat,
   &_swigt__p_OpenMM__MonteCarloBarostat,
   &_swigt__p_OpenMM__MonteCarloFlexibleBarostat,
   &_swigt__p_OpenMM__MonteCarloMembraneBarostat,
   &_swigt__p_OpenMM__NonbondedForce,
+  &_swigt__p_OpenMM__NoseHooverIntegrator,
+  &_swigt__p_OpenMM__OutOfPlaneSite,
   &_swigt__p_OpenMM__PeriodicTorsionForce,
   &_swigt__p_OpenMM__RBTorsionForce,
   &_swigt__p_OpenMM__RMSDForce,
+  &_swigt__p_OpenMM__RPMDIntegrator,
   &_swigt__p_OpenMM__RPMDMonteCarloBarostat,
+  &_swigt__p_OpenMM__ThreeParticleAverageSite,
+  &_swigt__p_OpenMM__TwoParticleAverageSite,
+  &_swigt__p_OpenMM__VariableLangevinIntegrator,
+  &_swigt__p_OpenMM__VariableVerletIntegrator,
+  &_swigt__p_OpenMM__VerletIntegrator,
+  &_swigt__p_RandomBatchEwaldPlugin__RandomBatchEwald,
   &_swigt__p_allocator_type,
   &_swigt__p_bool,
   &_swigt__p_char,
@@ -30557,43 +30635,67 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_value_type,
 };
 
-static swig_cast_info _swigc__p_GridForcePlugin__GridForce[] = {  {&_swigt__p_GridForcePlugin__GridForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__ATMForce[] = {  {&_swigt__p_OpenMM__ATMForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__AmoebaGeneralizedKirkwoodForce[] = {  {&_swigt__p_OpenMM__AmoebaGeneralizedKirkwoodForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__AmoebaMultipoleForce[] = {  {&_swigt__p_OpenMM__AmoebaMultipoleForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__AmoebaTorsionTorsionForce[] = {  {&_swigt__p_OpenMM__AmoebaTorsionTorsionForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__AmoebaVdwForce[] = {  {&_swigt__p_OpenMM__AmoebaVdwForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__AmoebaWcaDispersionForce[] = {  {&_swigt__p_OpenMM__AmoebaWcaDispersionForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__AndersenThermostat[] = {  {&_swigt__p_OpenMM__AndersenThermostat, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__BrownianIntegrator[] = {  {&_swigt__p_OpenMM__BrownianIntegrator, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__CMAPTorsionForce[] = {  {&_swigt__p_OpenMM__CMAPTorsionForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__CMMotionRemover[] = {  {&_swigt__p_OpenMM__CMMotionRemover, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__CompoundIntegrator[] = {  {&_swigt__p_OpenMM__CompoundIntegrator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_OpenMM__Context[] = {  {&_swigt__p_OpenMM__Context, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__CustomCVForce[] = {{&_swigt__p_OpenMM__CustomCVForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__CustomGBForce[] = {{&_swigt__p_OpenMM__CustomGBForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__AndersenThermostat[] = {{&_swigt__p_OpenMM__AndersenThermostat, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__HarmonicBondForce[] = {{&_swigt__p_OpenMM__HarmonicBondForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__CustomBondForce[] = {{&_swigt__p_OpenMM__CustomBondForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__CustomHbondForce[] = {{&_swigt__p_OpenMM__CustomHbondForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__RMSDForce[] = {{&_swigt__p_OpenMM__RMSDForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__CustomCentroidBondForce[] = {{&_swigt__p_OpenMM__CustomCentroidBondForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__CustomCompoundBondForce[] = {{&_swigt__p_OpenMM__CustomCompoundBondForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__CustomExternalForce[] = {{&_swigt__p_OpenMM__CustomExternalForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__CustomTorsionForce[] = {{&_swigt__p_OpenMM__CustomTorsionForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__AmoebaWcaDispersionForce[] = {{&_swigt__p_OpenMM__AmoebaWcaDispersionForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__PeriodicTorsionForce[] = {{&_swigt__p_OpenMM__PeriodicTorsionForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__AmoebaTorsionTorsionForce[] = {{&_swigt__p_OpenMM__AmoebaTorsionTorsionForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__CMAPTorsionForce[] = {{&_swigt__p_OpenMM__CMAPTorsionForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__RBTorsionForce[] = {{&_swigt__p_OpenMM__RBTorsionForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__CMMotionRemover[] = {{&_swigt__p_OpenMM__CMMotionRemover, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__GBSAOBCForce[] = {{&_swigt__p_OpenMM__GBSAOBCForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__AmoebaVdwForce[] = {{&_swigt__p_OpenMM__AmoebaVdwForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__MonteCarloAnisotropicBarostat[] = {{&_swigt__p_OpenMM__MonteCarloAnisotropicBarostat, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__MonteCarloFlexibleBarostat[] = {{&_swigt__p_OpenMM__MonteCarloFlexibleBarostat, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__MonteCarloBarostat[] = {{&_swigt__p_OpenMM__MonteCarloBarostat, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__MonteCarloMembraneBarostat[] = {{&_swigt__p_OpenMM__MonteCarloMembraneBarostat, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__RPMDMonteCarloBarostat[] = {{&_swigt__p_OpenMM__RPMDMonteCarloBarostat, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__DrudeForce[] = {{&_swigt__p_OpenMM__DrudeForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__CustomManyParticleForce[] = {{&_swigt__p_OpenMM__CustomManyParticleForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__AmoebaMultipoleForce[] = {{&_swigt__p_OpenMM__AmoebaMultipoleForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__HarmonicAngleForce[] = {{&_swigt__p_OpenMM__HarmonicAngleForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__CustomAngleForce[] = {{&_swigt__p_OpenMM__CustomAngleForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__GayBerneForce[] = {{&_swigt__p_OpenMM__GayBerneForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__AmoebaGeneralizedKirkwoodForce[] = {{&_swigt__p_OpenMM__AmoebaGeneralizedKirkwoodForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__CustomNonbondedForce[] = {{&_swigt__p_OpenMM__CustomNonbondedForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__NonbondedForce[] = {{&_swigt__p_OpenMM__NonbondedForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__HippoNonbondedForce[] = {{&_swigt__p_OpenMM__HippoNonbondedForce, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_OpenMM__Force[] = {  {&_swigt__p_OpenMM__CustomCVForce, _p_OpenMM__CustomCVForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__CustomGBForce, _p_OpenMM__CustomGBForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__AndersenThermostat, _p_OpenMM__AndersenThermostatTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__Force, 0, 0, 0},  {&_swigt__p_OpenMM__HarmonicBondForce, _p_OpenMM__HarmonicBondForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__CustomBondForce, _p_OpenMM__CustomBondForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__CustomHbondForce, _p_OpenMM__CustomHbondForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__RMSDForce, _p_OpenMM__RMSDForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__CustomCentroidBondForce, _p_OpenMM__CustomCentroidBondForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__CustomCompoundBondForce, _p_OpenMM__CustomCompoundBondForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__CustomExternalForce, _p_OpenMM__CustomExternalForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__CustomTorsionForce, _p_OpenMM__CustomTorsionForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__AmoebaWcaDispersionForce, _p_OpenMM__AmoebaWcaDispersionForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__PeriodicTorsionForce, _p_OpenMM__PeriodicTorsionForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__AmoebaTorsionTorsionForce, _p_OpenMM__AmoebaTorsionTorsionForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__CMAPTorsionForce, _p_OpenMM__CMAPTorsionForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__RBTorsionForce, _p_OpenMM__RBTorsionForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__CMMotionRemover, _p_OpenMM__CMMotionRemoverTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__GBSAOBCForce, _p_OpenMM__GBSAOBCForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__AmoebaVdwForce, _p_OpenMM__AmoebaVdwForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__MonteCarloAnisotropicBarostat, _p_OpenMM__MonteCarloAnisotropicBarostatTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__MonteCarloFlexibleBarostat, _p_OpenMM__MonteCarloFlexibleBarostatTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__MonteCarloBarostat, _p_OpenMM__MonteCarloBarostatTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__MonteCarloMembraneBarostat, _p_OpenMM__MonteCarloMembraneBarostatTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__RPMDMonteCarloBarostat, _p_OpenMM__RPMDMonteCarloBarostatTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__DrudeForce, _p_OpenMM__DrudeForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__CustomManyParticleForce, _p_OpenMM__CustomManyParticleForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__AmoebaMultipoleForce, _p_OpenMM__AmoebaMultipoleForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__HarmonicAngleForce, _p_OpenMM__HarmonicAngleForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__CustomAngleForce, _p_OpenMM__CustomAngleForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__GayBerneForce, _p_OpenMM__GayBerneForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__AmoebaGeneralizedKirkwoodForce, _p_OpenMM__AmoebaGeneralizedKirkwoodForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__CustomNonbondedForce, _p_OpenMM__CustomNonbondedForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__NonbondedForce, _p_OpenMM__NonbondedForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__HippoNonbondedForce, _p_OpenMM__HippoNonbondedForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_GridForcePlugin__GridForce, _p_GridForcePlugin__GridForceTo_p_OpenMM__Force, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__Continuous1DFunction[] = {  {&_swigt__p_OpenMM__Continuous1DFunction, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__Continuous2DFunction[] = {  {&_swigt__p_OpenMM__Continuous2DFunction, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__Continuous3DFunction[] = {  {&_swigt__p_OpenMM__Continuous3DFunction, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__CustomAngleForce[] = {  {&_swigt__p_OpenMM__CustomAngleForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__CustomBondForce[] = {  {&_swigt__p_OpenMM__CustomBondForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__CustomCVForce[] = {  {&_swigt__p_OpenMM__CustomCVForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__CustomCentroidBondForce[] = {  {&_swigt__p_OpenMM__CustomCentroidBondForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__CustomCompoundBondForce[] = {  {&_swigt__p_OpenMM__CustomCompoundBondForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__CustomExternalForce[] = {  {&_swigt__p_OpenMM__CustomExternalForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__CustomGBForce[] = {  {&_swigt__p_OpenMM__CustomGBForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__CustomHbondForce[] = {  {&_swigt__p_OpenMM__CustomHbondForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__CustomIntegrator[] = {  {&_swigt__p_OpenMM__CustomIntegrator, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__CustomManyParticleForce[] = {  {&_swigt__p_OpenMM__CustomManyParticleForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__CustomNonbondedForce[] = {  {&_swigt__p_OpenMM__CustomNonbondedForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__CustomTorsionForce[] = {  {&_swigt__p_OpenMM__CustomTorsionForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__Discrete1DFunction[] = {  {&_swigt__p_OpenMM__Discrete1DFunction, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__Discrete2DFunction[] = {  {&_swigt__p_OpenMM__Discrete2DFunction, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__Discrete3DFunction[] = {  {&_swigt__p_OpenMM__Discrete3DFunction, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__DrudeForce[] = {  {&_swigt__p_OpenMM__DrudeForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__DrudeLangevinIntegrator[] = {  {&_swigt__p_OpenMM__DrudeLangevinIntegrator, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__DrudeSCFIntegrator[] = {  {&_swigt__p_OpenMM__DrudeSCFIntegrator, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__Force[] = {  {&_swigt__p_OpenMM__CustomCVForce, _p_OpenMM__CustomCVForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__CustomGBForce, _p_OpenMM__CustomGBForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__AndersenThermostat, _p_OpenMM__AndersenThermostatTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__Force, 0, 0, 0},  {&_swigt__p_OpenMM__CustomCompoundBondForce, _p_OpenMM__CustomCompoundBondForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__HarmonicBondForce, _p_OpenMM__HarmonicBondForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__CustomCentroidBondForce, _p_OpenMM__CustomCentroidBondForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__CustomHbondForce, _p_OpenMM__CustomHbondForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__CustomBondForce, _p_OpenMM__CustomBondForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__RMSDForce, _p_OpenMM__RMSDForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__CustomExternalForce, _p_OpenMM__CustomExternalForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__CustomTorsionForce, _p_OpenMM__CustomTorsionForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__AmoebaWcaDispersionForce, _p_OpenMM__AmoebaWcaDispersionForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__AmoebaTorsionTorsionForce, _p_OpenMM__AmoebaTorsionTorsionForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__CMAPTorsionForce, _p_OpenMM__CMAPTorsionForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__RBTorsionForce, _p_OpenMM__RBTorsionForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__PeriodicTorsionForce, _p_OpenMM__PeriodicTorsionForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__CMMotionRemover, _p_OpenMM__CMMotionRemoverTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__GBSAOBCForce, _p_OpenMM__GBSAOBCForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_RandomBatchEwaldPlugin__RandomBatchEwald, _p_RandomBatchEwaldPlugin__RandomBatchEwaldTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__AmoebaVdwForce, _p_OpenMM__AmoebaVdwForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__RPMDMonteCarloBarostat, _p_OpenMM__RPMDMonteCarloBarostatTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__MonteCarloMembraneBarostat, _p_OpenMM__MonteCarloMembraneBarostatTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__MonteCarloAnisotropicBarostat, _p_OpenMM__MonteCarloAnisotropicBarostatTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__MonteCarloFlexibleBarostat, _p_OpenMM__MonteCarloFlexibleBarostatTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__MonteCarloBarostat, _p_OpenMM__MonteCarloBarostatTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__HarmonicAngleForce, _p_OpenMM__HarmonicAngleForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__DrudeForce, _p_OpenMM__DrudeForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__AmoebaMultipoleForce, _p_OpenMM__AmoebaMultipoleForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__CustomManyParticleForce, _p_OpenMM__CustomManyParticleForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__GayBerneForce, _p_OpenMM__GayBerneForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__CustomAngleForce, _p_OpenMM__CustomAngleForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__ATMForce, _p_OpenMM__ATMForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__NonbondedForce, _p_OpenMM__NonbondedForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__CustomNonbondedForce, _p_OpenMM__CustomNonbondedForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__AmoebaGeneralizedKirkwoodForce, _p_OpenMM__AmoebaGeneralizedKirkwoodForceTo_p_OpenMM__Force, 0, 0},  {&_swigt__p_OpenMM__HippoNonbondedForce, _p_OpenMM__HippoNonbondedForceTo_p_OpenMM__Force, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__GBSAOBCForce[] = {  {&_swigt__p_OpenMM__GBSAOBCForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__GayBerneForce[] = {  {&_swigt__p_OpenMM__GayBerneForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__HarmonicAngleForce[] = {  {&_swigt__p_OpenMM__HarmonicAngleForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__HarmonicBondForce[] = {  {&_swigt__p_OpenMM__HarmonicBondForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__HippoNonbondedForce[] = {  {&_swigt__p_OpenMM__HippoNonbondedForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__LangevinIntegrator[] = {  {&_swigt__p_OpenMM__LangevinIntegrator, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__LangevinMiddleIntegrator[] = {  {&_swigt__p_OpenMM__LangevinMiddleIntegrator, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__LocalCoordinatesSite[] = {  {&_swigt__p_OpenMM__LocalCoordinatesSite, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__MonteCarloAnisotropicBarostat[] = {  {&_swigt__p_OpenMM__MonteCarloAnisotropicBarostat, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__MonteCarloBarostat[] = {  {&_swigt__p_OpenMM__MonteCarloBarostat, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__MonteCarloFlexibleBarostat[] = {  {&_swigt__p_OpenMM__MonteCarloFlexibleBarostat, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__MonteCarloMembraneBarostat[] = {  {&_swigt__p_OpenMM__MonteCarloMembraneBarostat, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__NonbondedForce[] = {  {&_swigt__p_OpenMM__NonbondedForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__DrudeNoseHooverIntegrator[] = {{&_swigt__p_OpenMM__DrudeNoseHooverIntegrator, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__NoseHooverIntegrator[] = {  {&_swigt__p_OpenMM__NoseHooverIntegrator, 0, 0, 0},  {&_swigt__p_OpenMM__DrudeNoseHooverIntegrator, _p_OpenMM__DrudeNoseHooverIntegratorTo_p_OpenMM__NoseHooverIntegrator, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__OutOfPlaneSite[] = {  {&_swigt__p_OpenMM__OutOfPlaneSite, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__PeriodicTorsionForce[] = {  {&_swigt__p_OpenMM__PeriodicTorsionForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__RBTorsionForce[] = {  {&_swigt__p_OpenMM__RBTorsionForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__RMSDForce[] = {  {&_swigt__p_OpenMM__RMSDForce, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__RPMDIntegrator[] = {  {&_swigt__p_OpenMM__RPMDIntegrator, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__RPMDMonteCarloBarostat[] = {  {&_swigt__p_OpenMM__RPMDMonteCarloBarostat, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__ThreeParticleAverageSite[] = {  {&_swigt__p_OpenMM__ThreeParticleAverageSite, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__TwoParticleAverageSite[] = {  {&_swigt__p_OpenMM__TwoParticleAverageSite, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__VariableLangevinIntegrator[] = {  {&_swigt__p_OpenMM__VariableLangevinIntegrator, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__VariableVerletIntegrator[] = {  {&_swigt__p_OpenMM__VariableVerletIntegrator, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_OpenMM__VerletIntegrator[] = {  {&_swigt__p_OpenMM__VerletIntegrator, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_RandomBatchEwaldPlugin__RandomBatchEwald[] = {  {&_swigt__p_RandomBatchEwaldPlugin__RandomBatchEwald, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_allocator_type[] = {  {&_swigt__p_allocator_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_bool[] = {  {&_swigt__p_bool, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_char[] = {  {&_swigt__p_char, 0, 0, 0},{0, 0, 0, 0}};
@@ -30678,16 +30780,21 @@ static swig_cast_info _swigc__p_unsigned_short[] = {  {&_swigt__p_unsigned_short
 static swig_cast_info _swigc__p_value_type[] = {  {&_swigt__p_value_type, 0, 0, 0},{0, 0, 0, 0}};
 
 static swig_cast_info *swig_cast_initial[] = {
-  _swigc__p_GridForcePlugin__GridForce,
+  _swigc__p_OpenMM__ATMForce,
   _swigc__p_OpenMM__AmoebaGeneralizedKirkwoodForce,
   _swigc__p_OpenMM__AmoebaMultipoleForce,
   _swigc__p_OpenMM__AmoebaTorsionTorsionForce,
   _swigc__p_OpenMM__AmoebaVdwForce,
   _swigc__p_OpenMM__AmoebaWcaDispersionForce,
   _swigc__p_OpenMM__AndersenThermostat,
+  _swigc__p_OpenMM__BrownianIntegrator,
   _swigc__p_OpenMM__CMAPTorsionForce,
   _swigc__p_OpenMM__CMMotionRemover,
+  _swigc__p_OpenMM__CompoundIntegrator,
   _swigc__p_OpenMM__Context,
+  _swigc__p_OpenMM__Continuous1DFunction,
+  _swigc__p_OpenMM__Continuous2DFunction,
+  _swigc__p_OpenMM__Continuous3DFunction,
   _swigc__p_OpenMM__CustomAngleForce,
   _swigc__p_OpenMM__CustomBondForce,
   _swigc__p_OpenMM__CustomCVForce,
@@ -30696,25 +30803,44 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_OpenMM__CustomExternalForce,
   _swigc__p_OpenMM__CustomGBForce,
   _swigc__p_OpenMM__CustomHbondForce,
+  _swigc__p_OpenMM__CustomIntegrator,
   _swigc__p_OpenMM__CustomManyParticleForce,
   _swigc__p_OpenMM__CustomNonbondedForce,
   _swigc__p_OpenMM__CustomTorsionForce,
+  _swigc__p_OpenMM__Discrete1DFunction,
+  _swigc__p_OpenMM__Discrete2DFunction,
+  _swigc__p_OpenMM__Discrete3DFunction,
   _swigc__p_OpenMM__DrudeForce,
+  _swigc__p_OpenMM__DrudeLangevinIntegrator,
+  _swigc__p_OpenMM__DrudeNoseHooverIntegrator,
+  _swigc__p_OpenMM__DrudeSCFIntegrator,
   _swigc__p_OpenMM__Force,
   _swigc__p_OpenMM__GBSAOBCForce,
   _swigc__p_OpenMM__GayBerneForce,
   _swigc__p_OpenMM__HarmonicAngleForce,
   _swigc__p_OpenMM__HarmonicBondForce,
   _swigc__p_OpenMM__HippoNonbondedForce,
+  _swigc__p_OpenMM__LangevinIntegrator,
+  _swigc__p_OpenMM__LangevinMiddleIntegrator,
+  _swigc__p_OpenMM__LocalCoordinatesSite,
   _swigc__p_OpenMM__MonteCarloAnisotropicBarostat,
   _swigc__p_OpenMM__MonteCarloBarostat,
   _swigc__p_OpenMM__MonteCarloFlexibleBarostat,
   _swigc__p_OpenMM__MonteCarloMembraneBarostat,
   _swigc__p_OpenMM__NonbondedForce,
+  _swigc__p_OpenMM__NoseHooverIntegrator,
+  _swigc__p_OpenMM__OutOfPlaneSite,
   _swigc__p_OpenMM__PeriodicTorsionForce,
   _swigc__p_OpenMM__RBTorsionForce,
   _swigc__p_OpenMM__RMSDForce,
+  _swigc__p_OpenMM__RPMDIntegrator,
   _swigc__p_OpenMM__RPMDMonteCarloBarostat,
+  _swigc__p_OpenMM__ThreeParticleAverageSite,
+  _swigc__p_OpenMM__TwoParticleAverageSite,
+  _swigc__p_OpenMM__VariableLangevinIntegrator,
+  _swigc__p_OpenMM__VariableVerletIntegrator,
+  _swigc__p_OpenMM__VerletIntegrator,
+  _swigc__p_RandomBatchEwaldPlugin__RandomBatchEwald,
   _swigc__p_allocator_type,
   _swigc__p_bool,
   _swigc__p_char,
